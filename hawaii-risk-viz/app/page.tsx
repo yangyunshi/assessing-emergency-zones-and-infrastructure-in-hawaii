@@ -1,5 +1,3 @@
-// app/page.tsx
-
 import CheckboxPanel from "./components/CheckboxPanel";
 import MapArea from "./components/MapArea";
 
@@ -13,7 +11,6 @@ export default function HomePage() {
         backgroundColor: "#d6d6d6"
       }}
     >
-      {/* Top bar */}
       <header
         style={{
           height: "40px",
@@ -29,16 +26,14 @@ export default function HomePage() {
         Assessing Natural Disaster Risk in Hawaiʻi
       </header>
 
-      {/* Content area */}
       <section
         style={{
           flexGrow: 1,
           display: "flex",
           padding: "16px",
-          gap: "12px"
+          boxSizing: "border-box"
         }}
       >
-        {/* Left sidebar */}
         <aside
           style={{
             width: "260px",
@@ -46,20 +41,21 @@ export default function HomePage() {
             borderRadius: "4px",
             padding: "12px",
             boxSizing: "border-box",
-            boxShadow: "0 1px 4px rgba(0,0,0,0.1)"
+            boxShadow: "0 1px 4px rgba(0,0,0,0.1)",
+            marginRight: "12px"
           }}
         >
           <CheckboxPanel />
         </aside>
 
-        {/* Map area */}
+        {/* Map area: MapArea fills this completely */}
         <section
           style={{
             flexGrow: 1,
-            backgroundColor: "#c0c0c0",
+            display: "flex",
+            backgroundColor: "#ffffff",
             borderRadius: "4px",
-            padding: "8px",
-            boxSizing: "border-box",
+            overflow: "hidden",
             boxShadow: "0 1px 4px rgba(0,0,0,0.1)"
           }}
         >

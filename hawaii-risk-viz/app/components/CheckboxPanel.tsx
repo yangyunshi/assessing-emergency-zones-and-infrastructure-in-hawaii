@@ -89,7 +89,7 @@ function CheckboxPanel() {
             padding: "8px 10px",
             borderRadius: "16px",
             border: "1px solid #888",
-            backgroundColor: "#f2f2f2",
+            backgroundColor: "#3ac2a0ff",
             fontSize: "0.9rem",
             cursor: "pointer",
             alignSelf: "flex-start"
@@ -111,7 +111,7 @@ function CheckboxPanel() {
             cursor: "pointer"
           }}
         >
-          See Map
+          Update Map
         </button>
 
         <button
@@ -121,7 +121,7 @@ function CheckboxPanel() {
             padding: "8px 10px",
             borderRadius: "16px",
             border: "1px solid #5c7d7a",
-            backgroundColor: "#daeef2",
+            backgroundColor: "#523949ff",
             fontSize: "0.85rem",
             cursor: "pointer",
             textAlign: "left"
