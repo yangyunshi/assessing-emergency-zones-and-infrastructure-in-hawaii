@@ -1,0 +1,114 @@
+﻿objectid,island,zone_type,zone_desc,zone_code,tsu_evac,evac_zone,mapnum,mapname,areausac,st_areashape,st_perimetershape
+1,HAWAII,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,2537613.86157563,10269400030.8476,527626.309502487
+2,NIIHAU,Tsunami Safe Zone,Evacuate to this area.,3,0, ,0,,6339.30343231,25654353.4258959,22748.2091518979
+3,NIIHAU,Tsunami Safe Zone,Evacuate to this area.,3,0, ,0,,22128.48014199,89551140.1847832,60733.880416033
+4,KAUAI,Tsunami Safe Zone,Evacuate to this area.,3,0,,,,329459.21810514,1333279485.82029,327780.797598496
+5,OAHU,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,356.74078379,1443684.50673881,5635.33028840204
+6,OAHU,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,326673.7196717,1322006928.50514,356439.235544177
+7,OAHU,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,187.70461749,759616.675259565,3416.19078868995
+8,OAHU,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,311.23059849,1259510.58437088,4662.09323848088
+9,MOLOKINI,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,19.72801523,79836.76447626,1977.29888096473
+10,KAHOOLAWE,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,28549.42253801,115535876.096804,69411.0587759331
+11,LANAI,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,87858.06009084,355550376.938298,116779.081788732
+12,MOLOKAI,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,158255.50099632,640439852.343938,309635.647987979
+13,MAUI,Tsunami Safe Zone,Evacuate to this area.,3,0, ,,,448929.74716947,1816761497.57791,515342.094778593
+14,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,46.13269528,186693.140953809,20876.9511778958
+15,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,231.43923685,936605.108443581,35216.283466335
+16,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,34.21976222,138483.01844592,8818.42950974356
+17,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,87.78052855,355236.616689188,35256.8886273939
+18,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,294.36275914,1191248.58733345,56030.9000375958
+19,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,103.50790581,418883.308911507,35367.1628785437
+20,MOLOKAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,59.53409649,240926.904440344,29980.7968734082
+21,HAWAII,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,7511.03949139,30396219.9893715,65590.5417432886
+22,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,2.02249439,8184.77713511517,1674.62683387199
+23,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,193.32876012,782376.864028385,6517.08511149031
+24,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,247.95077933,1003425.21747431,14025.5059413989
+25,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,3181.99500049,12877128.4122228,45461.0148992685
+26,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,145.59563947,589207.005475552,9829.53080261306
+27,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,408.87116159,1654649.50478613,13809.5467931606
+28,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.00254071,10.2819177592347,78.0814861088072
+29,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.02110316,85.401810128053,71.0339880851348
+30,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,11.00653811,44542.0576227362,1863.041648084
+31,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,23.45683297,94926.8148510146,3258.55349887096
+32,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.55902313,2262.29541085717,416.450296454186
+33,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,536.12242292,2169619.14884466,17988.5354292456
+34,NIIHAU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,762.66006769,3086388.1385615,30352.6091631443
+35,KAUAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,4495.52609593,18192821.4246075,433752.313874233
+36,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,90.99842344,368259.027376334,12709.3856678224
+37,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,9.81415535,39716.6364792608,1458.19091925538
+38,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,389.02383811,1574329.91503056,7882.2601899907
+39,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,1589.15133631,6431093.01587251,47916.4723623885
+40,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,302.11519604,1222621.71189009,10340.4975484874
+41,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,4.73650147,19168.0180692267,1049.24561722844
+42,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,4535.07939389,18352888.5827371,94273.3979480676
+43,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,12.94632063,52392.1103378606,2048.03304002982
+44,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,169.7972565,687147.866573244,11127.8983595776
+45,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,8193.35789526,31420473.3166384,184661.745353455
+46,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,10344.95311395,41864707.4072814,222719.927222925
+47,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,734.57698298,2972739.47225681,30168.4994044945
+48,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,3783.656423,15311975.5433988,132746.80163281
+49,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,3130.22084291,12667604.9920183,121987.581297424
+50,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,150.99321014,611050.286403307,3273.64735253639
+51,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,12.26957857,49653.4214660535,1102.42388941006
+52,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,107.70088745,435851.771461917,4915.61654655843
+53,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,90.63728602,366797.55022477,8868.0336005091
+54,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.89832019,3635.38735865922,267.736829383596
+55,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,2.00013152,8094.27748320116,441.451032406937
+56,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.5217621,2111.50473927784,320.182906724522
+57,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.76103917,3079.82858929837,419.545092542443
+58,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,1.19389591,4831.54467633666,368.458233513337
+59,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,1.50508442,6090.88490568896,441.439554880177
+60,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,2.88260248,11665.5250019616,724.119212142886
+61,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,2.05487552,8315.81945060463,620.073468805429
+62,OAHU,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,18.48192654,74794.0023086377,2193.0462965066
+63,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,136.52911292,552515.92753343,51716.3067916074
+64,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,184.08378456,744963.62563842,39065.2144940678
+65,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,1256.32525278,5084188.25456407,47791.3779947677
+66,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,2189.08635871,8858953.62571371,68453.4761087185
+67,LANAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,56.7440076,229635.770125567,33848.6213229271
+68,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,220.35796985,891760.632561113,32883.4849905527
+69,LANAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,212.83253305,861306.148480013,34302.8218687846
+70,LANAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,156.813623,634604.75578585,27430.843830834
+71,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,260.02151259,1052273.93727941,25680.4281915306
+72,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,36.86369045,149182.659199338,22011.2853653036
+73,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,779.0339235,3152651.04715589,30877.6724780599
+74,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,509.28544084,2061013.30113519,31560.5957349929
+75,LANAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,1.64347706,6650.94231795109,3305.98793888047
+76,LANAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,0.16134975,652.961894802854,1144.75781187722
+77,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,46.74366698,189165.665572106,17625.6363416407
+78,LANAI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,35.41119103,143304.579064405,6719.27657775344
+79,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,558.65324585,2260798.51906487,62925.4740491506
+80,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,37.72097982,152652.000051072,6406.53626082283
+81,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,19.84880355,80325.5794244701,4406.45967516291
+82,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,140.2888262,567731.008235154,3100.24155872117
+83,MAUI,Extreme Tsunami Evacuation Zone,Evacuate out of these areas for an Extreme Tsunami Warning.,2,1,Yes,,,61.87950002,250418.453727158,3356.85272796993
+84,HAWAII,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,,,39757.22991283,160892444.778698,833824.695712857
+85,NIIHAU,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,0,,15147.62501447,61300508.7756973,167296.399687059
+86,KAUAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,,,27634.47812682,111833212.619593,442972.172530106
+87,OAHU,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,,,745459.61084053,94136742.1242799,993146.797609205
+88,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,6,KALAUPAPA TO KAUPIKIAWA,699.71593152,2831661.23795275,15806.2342660363
+89,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,5,POHAKUMAULIULI,996.70378557,4033533.24998797,20762.2319460071
+90,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,7,HALAWA,185.06700559,748942.595917132,5910.85977341476
+91,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,1,KAALAEA TO UALAPUE,796.05902857,3221549.47857182,31917.050820098
+92,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,3,KAPUKAULUA TO KAUNAKAKAI,3245.9601682,13135987.2974513,52356.1176773934
+93,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,4,HALENA TO KAPUKUWAHINE,835.27676011,3380258.64217185,34518.832694887
+94,MOLOKAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,2,UALAPUE TO KAPUKAULUA,1026.33914167,4153463.76085054,28872.1269227694
+95,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,7,KALEIA KEALEKII PT. TO KEAWALUA,718.83082631,2909016.78214493,38607.9031786057
+96,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,6,HANAKAOO TO KAELEKII PT.,900.43343359,3643939.3994094,23600.1373318507
+97,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,9,KANAHA BEACH PARK TO MALIKO GULCH,1020.9475661,4131644.74136671,27526.8044060859
+98,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,8,WAIEHU PT. TO KANAHA BEACH PARK,2382.62847151,9642193.90086602,34540.5753117442
+99,LANAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,1,POHAKULOA PT. TO KAIOLOHIA BAY,428.09059124,1732428.08821875,23342.4695974059
+100,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,5,LAUNIUPOKO PT. TO WAHIKULI STATE WAYSIDE PARK,750.37754021,3036682.31453388,22534.770194284
+101,LANAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,2,KAIOLOHIA BAY TO HAUA,764.14428435,3092394.57434764,20863.8773626532
+102,LANAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,3,HAUA TO KAPOHO,695.91785643,2816290.91191158,26152.0998931058
+103,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,4,UKUMEHAME BEACH PARK TO LAUNIUPOKO PT.,831.88324409,3366525.51510106,21973.7672671639
+104,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,10,HANA,506.46998336,2049619.50336782,19878.2856623484
+105,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,3,KEALIA TO UKUMEHAME BEACH PARK,1253.16984172,5071418.70797415,28479.4868669893
+106,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,2,KAMAOLE BEACH PARK TO KEALIA,1388.52887214,5619199.46066958,23182.3296105897
+107,LANAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,5,KAUMALAPAU HARBOR,13.74655082,55630.5399760764,2639.77590555556
+108,LANAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,5,KAUMALAPAU HARBOR,3.5127978,14215.8452167739,1265.98331909321
+109,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,10,HANA,286.40907834,1159061.05436612,14926.3171876483
+110,LANAI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,4,MANELE BAY TO KAPIHUA BAY,92.38135421,373855.572027648,6895.06759757887
+111,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,1,PUU OLAI TO KAMAOLE BEACH PARK,991.20987845,4011300.10774072,44555.9122926504
+112,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,0,KEANAE,94.68771538,383189.121850235,3160.04307245494
+113,MAUI,Tsunami Evacuation Zone,For any Tsunami Warning evacuate out of these areas.,1,1,Yes,0,KAHAKULOA,39.60729875,160285.692443791,2820.20426019071

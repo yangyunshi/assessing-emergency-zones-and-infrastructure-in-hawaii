@@ -1,0 +1,1532 @@
+﻿objectid,id,island,volcano,line_code,description,relation,name,source,st_lengthshape
+1,1,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",934.475865660743
+2,2,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1318.18485847633
+3,3,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",828.426788799482
+4,4,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",263.254846108197
+5,5,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",90.2962366976451
+6,6,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",192.395739963214
+7,7,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",970.44503468316
+8,8,Hawaii,koha,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",844.289096785742
+9,9,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",813.834818856392
+10,10,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",385.535188011187
+11,11,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",253.815679112264
+12,12,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1090.2386816206
+13,13,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",110.360762984261
+14,14,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",663.981912471943
+15,15,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",218.017198741657
+16,16,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",359.661036659804
+17,17,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",196.181315216909
+18,18,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",317.43100262117
+19,19,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1248.17601100489
+20,20,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",902.894267274849
+21,21,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",219.967594599956
+22,22,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",564.486792840938
+23,23,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",406.625997399772
+24,24,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",133.815678106794
+25,25,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",737.831538581973
+26,26,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",560.996934079612
+27,27,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1006.32080055904
+28,28,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",296.524781279317
+29,29,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1365.36226055543
+30,30,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",263.537102448425
+31,31,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",651.944286350025
+32,32,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",321.553766796167
+33,33,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",366.813631118673
+34,34,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",557.075873215548
+35,35,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",551.929203433565
+36,36,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",358.522342262781
+37,37,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",187.277277122584
+38,38,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",82.0084407613535
+39,39,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",618.466062906687
+40,40,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",275.885975712348
+41,41,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",265.2945610619
+42,42,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",4264.90400036085
+43,43,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1008.35884804423
+44,44,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2983.14880220652
+45,45,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",193.255741650276
+46,46,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1248.19324538919
+47,47,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",491.398320210005
+48,48,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",132.570959116216
+49,49,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",70.2929109161984
+50,50,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",192.653040289004
+51,51,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",685.318784037809
+52,52,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",726.6646165187
+53,53,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",73.8895888401963
+54,54,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",153.258735969395
+55,55,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",124.11355279444
+56,56,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",286.294643008577
+57,57,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",278.859039884905
+58,58,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",390.732607451629
+59,59,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",440.404326284524
+60,60,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",321.759731662705
+61,61,Hawaii,koha,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",332.874521295809
+62,62,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",394.277204730456
+63,63,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",396.814755944213
+64,64,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",137.643737894082
+65,65,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",610.570163627615
+66,66,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",733.83664881019
+67,67,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",495.364228366781
+68,68,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",902.37291931887
+69,69,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",102.992114183875
+70,70,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",547.791646882284
+71,71,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",476.689924196794
+72,72,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",977.340018330117
+73,73,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",87.7217552987868
+74,74,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",329.7178862825
+75,75,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",666.409682796704
+76,76,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",354.47408572814
+77,77,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",821.38313414255
+78,78,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",482.172711734665
+79,79,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",636.048267292759
+80,80,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",330.598921950949
+81,81,Hawaii,koha,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",344.621027457088
+82,82,Hawaii,koha,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",429.427552538712
+83,83,Hawaii,koha,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",848.084506701874
+84,84,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",20.3886194593732
+85,85,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",970.483857016462
+86,86,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1019.25514767382
+87,87,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",330.31016875814
+88,88,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",82.911540562153
+89,89,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",807.310219468722
+90,90,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",93.6355965871508
+91,91,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",143.531147445441
+92,92,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",753.088705661792
+93,93,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",899.216582457945
+94,94,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",677.089389687038
+95,95,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",218.549416428281
+96,96,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",348.363541826042
+97,97,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",293.10171131885
+98,98,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",847.59439754839
+99,99,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",287.247218143851
+100,100,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1400.65006718091
+101,101,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",265.173547531802
+102,102,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",177.969153050903
+103,103,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",149.107479962378
+104,104,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",447.045942138199
+105,105,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",459.269400311866
+106,106,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",394.556302433348
+107,107,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",604.981855620727
+108,108,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",366.273893998825
+109,109,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",150.152117227702
+110,110,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",502.58117776539
+111,111,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",438.815127886638
+112,112,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",53.0323265391229
+113,113,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",518.117475979667
+114,114,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1040.09894728467
+115,115,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",128.192505118505
+116,116,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",236.80422643012
+117,117,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",146.060070314752
+118,118,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",55.3669834421531
+119,119,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",65.5187074165434
+120,120,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",351.163076784386
+121,121,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",663.866814435133
+122,122,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",512.780841848576
+123,123,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",21.0688753611135
+124,124,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",286.503279736032
+125,125,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",366.957239335619
+126,126,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",362.852716816512
+127,127,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",332.829323425174
+128,128,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",795.324673918401
+129,129,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",541.405573522808
+130,130,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",453.242850148477
+131,131,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",61.3014445725056
+132,132,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",985.108252599468
+133,133,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",135.164304000727
+134,134,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",339.441291042402
+135,135,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",294.292937755635
+136,136,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",244.553296358723
+137,137,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",123.433938648996
+138,138,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",206.947762760084
+139,139,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",601.605740276063
+140,140,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",857.845933743399
+141,141,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",136.345669333203
+142,142,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",782.725754794288
+143,143,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",367.687480196265
+144,144,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",91.7078247089999
+145,145,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",261.002934199176
+146,146,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",90.3696143074253
+147,147,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",229.988165083803
+148,148,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",55.0272385801371
+149,149,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",306.324456303763
+150,150,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",703.607727143282
+151,151,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",287.739697561907
+152,152,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",157.080620795879
+153,153,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1448.58011111365
+154,154,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",141.411355000598
+155,155,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",141.294261612852
+156,156,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",237.587102029052
+157,157,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",348.917921399805
+158,158,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",397.227397806029
+159,159,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",167.596972286601
+160,160,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",199.874333641843
+161,161,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",302.026415544925
+162,162,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",572.081219056455
+163,163,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",448.749244064257
+164,164,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",182.553250659675
+165,165,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",197.31848199934
+166,166,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",223.604625292026
+167,167,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",78.5448450733801
+168,168,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",448.346396113894
+169,169,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",771.760394985078
+170,170,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",201.978208962752
+171,171,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",555.471271971085
+172,172,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",341.637995207057
+173,173,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",497.207023982845
+174,174,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",508.787281022632
+175,175,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",545.066957699238
+176,176,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",120.809590662096
+177,177,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",92.9951998793453
+178,178,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",60.4734891523829
+179,179,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",478.431127702159
+180,180,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",288.14765653416
+181,181,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",308.081553471382
+182,182,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",741.882744613722
+183,183,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",67.1756117328445
+184,184,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",239.265156452624
+185,185,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",59.1547066798738
+186,186,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",320.358854278982
+187,187,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",213.967818491064
+188,188,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",532.741954243397
+189,189,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",78.5597460565068
+190,190,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",54.7795224890133
+191,191,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1328.26352236545
+192,192,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",75.0621330094617
+193,193,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",457.4984989812
+194,194,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",347.614972124888
+195,195,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",493.17790265881
+196,196,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",567.208557403045
+197,197,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",504.979644005943
+198,198,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",257.05090989414
+199,199,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",274.838327772082
+200,200,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",616.060072623465
+201,201,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",187.054648268615
+202,202,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",70.3724131380616
+203,203,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",366.204677285986
+204,204,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",334.842330522859
+205,205,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2669.44189228779
+206,206,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",188.363388738745
+207,207,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",165.168793429689
+208,208,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",297.33310629386
+209,209,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",295.614616140708
+210,210,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",296.746441515597
+211,211,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",348.179902083877
+212,212,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",351.610013975943
+213,213,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",213.582143960871
+214,214,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",311.590855119061
+215,215,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",279.366740116222
+216,216,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",158.029771066978
+217,217,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",164.766017609181
+218,218,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",42.3560559645566
+219,219,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",223.54187106508
+220,220,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1079.26419048409
+221,221,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2134.76950167558
+222,222,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",197.600052987523
+223,223,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1193.81532753853
+224,224,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",147.13566459962
+225,225,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",263.528422905285
+226,226,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1081.64935818345
+227,227,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",223.763069889448
+228,228,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",253.911315440428
+229,229,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",498.66831099215
+230,230,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",302.399000213029
+231,231,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",710.917399584729
+232,232,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",515.143139142089
+233,233,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",673.273638749503
+234,234,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",118.551645436841
+235,235,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",280.682215419015
+236,236,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",206.325032109358
+237,237,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",114.570588642145
+238,238,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",277.918514733785
+239,239,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",556.612047555065
+240,240,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",200.130843082213
+241,241,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",416.252933426029
+242,242,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",629.384653215504
+243,243,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1417.90993238389
+244,244,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",434.693372342227
+245,245,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",251.331724137168
+246,246,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",218.723381666349
+247,247,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",65.0822918078202
+248,248,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",304.749074747122
+249,249,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",697.663660274005
+250,250,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",395.327502162432
+251,251,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",445.204988592126
+252,252,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1013.9105334168
+253,253,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",204.979786978307
+254,254,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",435.634607732357
+255,255,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",386.804359993531
+256,256,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",489.334744567874
+257,257,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",280.789470777809
+258,258,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",661.080171468041
+259,259,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",221.101051947495
+260,260,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",296.368850710941
+261,261,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",656.901964917481
+262,262,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",282.668409392414
+263,263,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",218.764876160486
+264,264,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",163.691208452325
+265,265,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",324.523646578545
+266,266,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",525.546042256605
+267,267,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",208.946365601838
+268,268,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",464.30095503899
+269,269,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",219.78816594522
+270,270,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",296.085044485734
+271,271,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",255.99924691068
+272,272,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",1039.1387451043
+273,273,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",213.108351713457
+274,274,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",179.757367989947
+275,275,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",476.107937509954
+276,276,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",206.010009158623
+277,277,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",204.331911799704
+278,278,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",2408.46030406685
+279,279,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",721.459153468638
+280,280,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",553.180538424597
+281,281,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",435.316020000066
+282,282,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",746.627710346793
+283,283,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",219.739317832892
+284,284,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",214.608316397555
+285,285,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",359.293075190997
+286,286,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",625.591617411174
+287,287,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1128.723585361
+288,288,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",384.45546353685
+289,289,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",248.653828076271
+290,290,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",418.503492577413
+291,291,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1595.15061183668
+292,292,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",244.62179595214
+293,293,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",954.030759768842
+294,294,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",462.920376387924
+295,295,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",485.291485079336
+296,296,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",159.94020469142
+297,297,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",142.450689120837
+298,298,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",79.9224297065983
+299,299,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",379.057872419752
+300,300,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",106.747819979214
+301,301,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",346.797014290153
+302,302,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",414.079840314302
+303,303,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",205.806344804096
+304,304,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2520.15338351759
+305,305,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",427.199973901996
+306,306,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",149.542665612755
+307,307,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",154.131787994506
+308,308,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",878.114089167166
+309,309,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",377.118893460083
+310,310,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",1681.45013716581
+311,311,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2083.02543867464
+312,312,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",254.949845734477
+313,313,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",57.3060681508564
+314,314,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",511.179577387386
+315,315,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",252.354913243172
+316,316,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",530.770718505684
+317,317,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",745.450306624406
+318,318,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",75.2035011785314
+319,319,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",621.089488820774
+320,320,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1399.15531144785
+321,321,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",186.093826675712
+322,322,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",467.911638753044
+323,323,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",238.48157495206
+324,324,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",547.572627643503
+325,325,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",282.936882948007
+326,326,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",211.372012015955
+327,327,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",387.75172566865
+328,328,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",345.523566393655
+329,329,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",611.845784701545
+330,330,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",134.459932867331
+331,331,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",620.255328936747
+332,332,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",456.209897727698
+333,333,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",477.654884335155
+334,334,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1666.69585213725
+335,335,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",5.8779594864287
+336,336,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",898.865504399635
+337,337,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",392.382012728957
+338,338,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1405.96399137621
+339,339,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",569.863481021148
+340,340,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",94.7151964027375
+341,341,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",455.481273699864
+342,342,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",970.539984989678
+343,343,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",537.97437040566
+344,344,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",260.849633257778
+345,345,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",298.234652701537
+346,346,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",236.169860306882
+347,347,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",254.060262336173
+348,348,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",177.108855785001
+349,349,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",287.235811265726
+350,350,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",271.434047869803
+351,351,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",816.521628416504
+352,352,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",93.4963351118348
+353,353,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",235.351550734906
+354,354,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",718.111612049887
+355,355,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",228.951854150183
+356,356,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",773.699890253305
+357,357,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",236.269276318917
+358,358,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",381.788915630334
+359,359,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",627.973482072445
+360,360,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",134.059709743656
+361,361,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",792.273141080141
+362,362,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",207.115229507664
+363,363,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1348.40880555933
+364,364,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",361.904131150982
+365,365,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",439.556184551134
+366,366,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",649.444756550618
+367,367,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",580.767141601011
+368,368,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",182.268695767524
+369,369,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",205.695298751725
+370,370,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1547.2214229334
+371,371,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",202.227621306976
+372,372,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",619.463980918228
+373,373,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1561.24739026
+374,374,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",344.016080025647
+375,375,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",352.115666760257
+376,376,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",262.864390891723
+377,377,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",37.4848300908725
+378,378,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",425.19027731216
+379,379,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",274.437385891338
+380,380,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2408.64372132707
+381,381,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1098.01663402733
+382,382,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",908.553160626409
+383,383,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",525.435974326979
+384,384,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",176.065033071548
+385,385,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",303.523733542285
+386,386,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",177.107580151385
+387,387,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",321.317992560645
+388,388,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",221.930949117997
+389,389,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",102.324042621036
+390,390,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1863.63266804985
+391,391,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2720.88348200733
+392,392,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",657.202932294074
+393,393,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",692.08416512655
+394,394,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",657.438931068407
+395,395,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",118.751060494993
+396,396,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",54.1837548554208
+397,397,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",604.096769999681
+398,398,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",295.647392771924
+399,399,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",35.5900585266722
+400,400,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",172.343696460463
+401,401,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",275.242787340083
+402,402,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",64.5269097804132
+403,403,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",33.8950960419898
+404,404,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",245.180726680991
+405,405,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",34.6248249075148
+406,406,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",105.66981584173
+407,407,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",127.700154828452
+408,408,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1926.18656547944
+409,409,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",133.180584218436
+410,410,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",95.096966223223
+411,411,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",39.7987726503868
+412,412,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",124.761561039112
+413,413,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",367.602066070071
+414,414,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1480.89685609319
+415,415,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",949.946151026434
+416,416,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",737.008375432408
+417,417,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1111.62252539029
+418,418,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",745.429816233622
+419,419,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3430.07332361612
+420,420,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",356.258448461246
+421,421,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",571.381315280474
+422,422,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1586.28269299641
+423,423,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",289.769622668419
+424,424,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",814.861848774546
+425,425,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",875.713361905515
+426,426,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",473.337204085552
+427,427,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1056.3874216836
+428,428,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",520.04790776871
+429,429,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",316.91773226934
+430,430,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",317.485231588734
+431,431,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",81.3072361164973
+432,432,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",429.452563135242
+433,433,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",390.995817167874
+434,434,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",906.633959380889
+435,435,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1295.66400109203
+436,436,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",849.094806571098
+437,437,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",222.736084483075
+438,438,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",186.20197472081
+439,439,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1024.40271849479
+440,440,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",969.727202426761
+441,441,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",246.770394223699
+442,442,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1067.59110941474
+443,443,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",248.329994637388
+444,444,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",249.678482359203
+445,445,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",233.211317144812
+446,446,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",567.883230328327
+447,447,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",328.331690610864
+448,448,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",116.94477173401
+449,449,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",136.874314644552
+450,450,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",116.173100626676
+451,451,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",49.029415297149
+452,452,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",257.58300860083
+453,453,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",96.9363209048916
+454,454,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",820.756179187681
+455,455,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",384.591868537513
+456,456,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",994.243063526584
+457,457,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",421.98253856967
+458,458,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",212.54472124251
+459,459,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",642.964583356519
+460,460,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",308.761856195594
+461,461,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",233.115644522958
+462,462,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",356.310971206256
+463,463,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2637.94509156231
+464,464,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2196.75324894369
+465,465,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",848.286436001735
+466,466,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",517.113482778776
+467,467,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",384.876684835046
+468,468,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",888.557201238002
+469,469,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",952.342674684434
+470,470,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1456.29150398496
+471,471,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",617.518602443619
+472,472,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",211.483630763048
+473,473,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",815.13353387327
+474,474,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",654.841908654602
+475,475,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",739.706094545696
+476,476,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",314.666352527744
+477,477,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",653.447952399039
+478,478,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",305.92719880223
+479,479,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",340.132120018379
+480,480,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",649.474153639248
+481,481,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1805.49592274733
+482,482,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1160.70721886175
+483,483,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1394.81470571721
+484,484,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2389.02114333895
+485,485,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",318.144809279355
+486,486,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",831.876650337242
+487,487,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",101.057149889235
+488,488,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",193.590666347788
+489,489,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1589.99960971498
+490,490,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",75.1803032239507
+491,491,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",126.16769336803
+492,492,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2809.77222330368
+493,493,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",446.80389041408
+494,494,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",392.012635365337
+495,495,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",630.477212819268
+496,496,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1311.48157674002
+497,497,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",611.006726269906
+498,498,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",116.728092568319
+499,499,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",214.457586303428
+500,500,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1459.93948281782
+501,501,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",140.342711456443
+502,502,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1436.01512924175
+503,503,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",210.424230562807
+504,504,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",196.579024632594
+505,505,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",167.531294485446
+506,506,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",151.89341168166
+507,507,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",375.694434680949
+508,508,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3491.34352475506
+509,509,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1455.33942353461
+510,510,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",53.2256084148998
+511,511,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",537.127596948492
+512,512,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1592.70968610332
+513,513,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",950.767266727696
+514,514,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",115.380506628955
+515,515,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",16.4365053665154
+516,516,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",637.893488191622
+517,517,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",53.8052174805535
+518,518,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",803.388924233082
+519,519,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",80.3994605434767
+520,520,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",102.106083290949
+521,521,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",395.867968467159
+522,522,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",62.8167241829155
+523,523,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",14.5209318316184
+524,524,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",180.420135062048
+525,525,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",669.253986498034
+526,526,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",136.63038286045
+527,527,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",833.271354058158
+528,528,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",44.8940245013617
+529,529,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",250.185820207127
+530,530,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1327.84715718087
+531,531,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",55.7231138718812
+532,532,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",361.008770884536
+533,533,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",58.5951546806744
+534,534,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",255.850088932286
+535,535,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",315.072255699468
+536,536,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",468.817991112298
+537,537,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1010.97295762622
+538,538,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1132.91608099267
+539,539,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",117.981711279947
+540,540,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3065.40760151396
+541,541,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",156.387435004879
+542,542,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1323.99494907983
+543,543,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",442.161009524671
+544,544,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",220.707626224975
+545,545,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",456.652767260152
+546,546,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",563.897732176439
+547,547,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1294.91181972534
+548,548,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",546.006674010553
+549,549,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",143.281165678407
+550,550,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",582.686911310609
+551,551,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",596.840415888568
+552,552,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",629.020547263029
+553,553,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",157.952063373379
+554,554,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1173.71743806498
+555,555,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",324.5923895248
+556,556,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",444.0581721587
+557,557,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",206.123937995588
+558,558,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",253.282286911648
+559,559,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",656.986637033658
+560,560,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2226.96977261366
+561,561,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",95.458625623498
+562,562,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",168.265202853835
+563,563,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",257.97823182918
+564,564,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",697.492047450645
+565,565,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",59.4430154219131
+566,566,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",609.923938780698
+567,567,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",528.027246919281
+568,568,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",141.109951137205
+569,569,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",61.8382684821205
+570,570,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",100.527272304199
+571,571,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",310.85548883217
+572,572,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",285.431260798266
+573,573,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",334.008046774742
+574,574,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",137.478770260546
+575,575,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",383.987802967876
+576,576,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",302.076399658929
+577,577,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2853.71280889585
+578,578,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",246.586475914512
+579,579,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",792.448009588967
+580,580,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",115.272033385765
+581,581,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1507.56305138618
+582,582,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",199.949284646444
+583,583,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3317.35480204889
+584,584,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",758.157683938986
+585,585,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",466.842912673217
+586,586,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",43.5727336268469
+587,587,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",4493.06041090109
+588,588,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",231.757216717869
+589,589,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",171.472375444681
+590,590,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1697.96566928394
+591,591,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",891.68765604575
+592,592,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",660.014840080221
+593,593,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",892.649054842406
+594,594,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2257.29595812499
+595,595,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",836.963472760816
+596,596,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",779.358596507753
+597,597,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",128.414126452329
+598,598,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",417.364230789594
+599,599,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",117.488219611776
+600,600,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",709.817092133295
+601,601,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",537.739513031398
+602,602,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",615.713716151974
+603,603,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",183.152584276357
+604,604,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",378.991341469417
+605,605,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",499.54517463677
+606,606,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1701.84464991453
+607,607,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",373.439903539515
+608,608,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2359.73518146207
+609,609,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",996.698549343564
+610,610,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1206.41663273524
+611,611,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",336.789288499447
+612,612,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",80.2988838568024
+613,613,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",95.4794074937573
+614,614,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",339.916375098763
+615,615,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",154.12880195765
+616,616,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",137.418761809226
+617,617,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",101.943836084366
+618,618,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",311.665977786659
+619,619,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",347.927904692218
+620,620,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3126.54727833225
+621,621,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",71.7875439616209
+622,622,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1791.59788809461
+623,623,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",530.189032150108
+624,624,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",177.4567453862
+625,625,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",365.993716500611
+626,626,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",133.434862852692
+627,627,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",56.5760804976374
+628,628,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",714.834736135924
+629,629,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1505.3694393948
+630,630,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",239.452450533404
+631,631,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",497.054898354459
+632,632,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",422.19632920401
+633,633,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2871.63603630268
+634,634,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",311.737490921618
+635,635,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",16.3598705303984
+636,636,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",655.197339726896
+637,637,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1357.0982014546
+638,638,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",336.441873890076
+639,639,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",67.5415934356744
+640,640,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",530.858010350682
+641,641,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",616.084095853252
+642,642,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",816.43631485934
+643,643,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",901.369134094131
+644,644,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",260.263485283218
+645,645,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",580.003346722665
+646,646,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1211.52482226096
+647,647,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1294.80713175962
+648,648,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",419.983704179379
+649,649,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",179.467711726277
+650,650,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",725.597959244782
+651,651,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1064.03376730354
+652,652,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1695.08416653069
+653,653,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",729.125304263434
+654,654,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",607.671541194492
+655,655,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",585.189468130235
+656,656,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",123.717243541037
+657,657,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",128.013590179827
+658,658,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",55.8783992429404
+659,659,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1274.90928416235
+660,660,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",38.7178220573211
+661,661,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",44.3552502001445
+662,662,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",92.7646035364903
+663,663,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1186.09558668074
+664,664,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",135.934672721612
+665,665,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",118.634635424695
+666,666,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",135.902272571922
+667,667,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",481.467057934648
+668,668,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",265.1633175786
+669,669,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",81.9024494225982
+670,670,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",142.377290691363
+671,671,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",274.330393632931
+672,672,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",234.977526737206
+673,673,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",799.770291341626
+674,674,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",297.496539353293
+675,675,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1217.40941745762
+676,676,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",246.230791353681
+677,677,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",723.76714298828
+678,678,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",557.213366040546
+679,679,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1019.04358472455
+680,680,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1560.10996174137
+681,681,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",453.429614063876
+682,682,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",262.275712611802
+683,683,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",973.476357218487
+684,684,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",937.555645060075
+685,685,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",242.230006908472
+686,686,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",666.854084794777
+687,687,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1704.79672818987
+688,688,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",952.915186168255
+689,689,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",492.943215791433
+690,690,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",543.11414459898
+691,691,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",978.083081023186
+692,692,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1010.48240136942
+693,693,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1156.01342289921
+694,694,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2181.13730388823
+695,695,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",389.279389464947
+696,696,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1108.00949980821
+697,697,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",786.317279509772
+698,698,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",207.435575112047
+699,699,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",368.839245106785
+700,700,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",98.5328930956343
+701,701,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",45.7669174252922
+702,702,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",177.05168646947
+703,703,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3056.18897698921
+704,704,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",272.521048323218
+705,705,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",132.964206481449
+706,706,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3243.08490498629
+707,707,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",125.024513367664
+708,708,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",235.812291133948
+709,709,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",280.237884895868
+710,710,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",306.015316997248
+711,711,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",159.691356717976
+712,712,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",661.764513268732
+713,713,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",194.225345850798
+714,714,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1632.17265932158
+715,715,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",736.024569702464
+716,716,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3151.11365913817
+717,717,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",53.3548767301793
+718,718,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",323.632153996575
+719,719,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",59.3455214685277
+720,720,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",393.448209308018
+721,721,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",23.5409298077148
+722,722,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",723.261991742
+723,723,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",80.9881382961689
+724,724,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",260.859450460717
+725,725,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",198.077457807098
+726,726,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",460.913204910245
+727,727,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",811.289695569968
+728,728,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",568.909340501368
+729,729,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",512.944006785699
+730,730,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",83.5090707429445
+731,731,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1636.42932449633
+732,732,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1291.87749388339
+733,733,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",606.722992485317
+734,734,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",146.494524835456
+735,735,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",863.783999482469
+736,736,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",562.249758848432
+737,737,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",109.055421316991
+738,738,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1666.46889606526
+739,739,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",906.77938943736
+740,740,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1165.7027105186
+741,741,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",91.4197205096846
+742,742,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",140.974328658579
+743,743,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",98.6122605896437
+744,744,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",458.32150627751
+745,745,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",87.5775379570024
+746,746,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1132.51754140147
+747,747,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",596.150953946495
+748,748,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",940.654824640949
+749,749,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",92.7365188109098
+750,750,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",498.983042148135
+751,751,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",47.712971334776
+752,752,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",279.119328605131
+753,753,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1005.34267541143
+754,754,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",70.0539569592365
+755,755,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2640.98960027059
+756,756,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",138.300826350631
+757,757,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",74.3844050118011
+758,758,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",264.509856223815
+759,759,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",110.201341332211
+760,760,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",922.019740800591
+761,761,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",992.386079177506
+762,762,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",487.49922866974
+763,763,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",96.4666075650658
+764,764,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",330.096484084187
+765,765,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",348.809196819342
+766,766,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",853.525761463196
+767,767,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",70.1159471884917
+768,768,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",251.903292534817
+769,769,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",234.721459337241
+770,770,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3093.3532640564
+771,771,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",96.846967531086
+772,772,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",154.441123674231
+773,773,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",289.844593585615
+774,774,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",125.805781528168
+775,775,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",234.151248707491
+776,776,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",556.469660049183
+777,777,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",166.697632713107
+778,778,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",780.061471747443
+779,779,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1007.49643051479
+780,780,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",406.244761623947
+781,781,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",703.121355112682
+782,782,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",75.4020445984832
+783,783,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",71.3835997642615
+784,784,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",853.281124549303
+785,785,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",91.6363344314877
+786,786,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",970.424962415206
+787,787,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",89.7107875535623
+788,788,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",304.767687877744
+789,789,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",101.926373850047
+790,790,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",178.349409469192
+791,791,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",879.42188953636
+792,792,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",509.996990243619
+793,793,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",368.623881635509
+794,794,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",201.472099487201
+795,795,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1182.98458485915
+796,796,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",77.9902707271803
+797,797,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1002.04932298725
+798,798,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",437.22598983195
+799,799,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",382.534913864781
+800,800,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",221.518393455377
+801,801,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1093.22423716886
+802,802,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1384.40363649173
+803,803,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",65.9895353525273
+804,804,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",233.200649220209
+805,805,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",637.389852995175
+806,806,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1753.9191700405
+807,807,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",665.614192998378
+808,808,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",168.68836168614
+809,809,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2005.19415686459
+810,810,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",205.085479662105
+811,811,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",253.296784033333
+812,812,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",302.921339865046
+813,813,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2163.47837950072
+814,814,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1271.17719117384
+815,815,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",182.473567685337
+816,816,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",284.741718941679
+817,817,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",318.495531710707
+818,818,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",74.1864659159096
+819,819,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",90.710652710065
+820,820,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",61.0282769630999
+821,821,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",382.360078426452
+822,822,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",97.9790187748253
+823,823,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",751.039165915826
+824,824,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",54.9416513832385
+825,825,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",442.357508311137
+826,826,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",102.730275805134
+827,827,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",701.099666589666
+828,828,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1850.11616913284
+829,829,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",773.094417003224
+830,830,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",410.807757122969
+831,831,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",188.38226508935
+832,832,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",442.702295475346
+833,833,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1259.33767460257
+834,834,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",91.4674700169161
+835,835,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",661.6819140418
+836,836,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",406.481535671172
+837,837,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",305.658170326478
+838,838,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",102.399268177513
+839,839,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1045.92897670132
+840,840,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",166.32573681594
+841,841,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",896.494391534685
+842,842,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",478.152412677674
+843,843,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",350.191119365626
+844,844,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",336.669057615849
+845,845,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",273.221573780724
+846,846,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",43.9876330128845
+847,847,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",209.420098642733
+848,848,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",940.545160222615
+849,849,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",578.699733586855
+850,850,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",559.53824140744
+851,851,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",72.1504252873095
+852,852,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",84.5255152994327
+853,853,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",30.5762918379943
+854,854,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",556.644150882175
+855,855,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",532.944967876721
+856,856,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",225.473624924392
+857,857,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",63.0994131640558
+858,858,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",38.2676249370527
+859,859,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1676.43157759304
+860,860,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3472.93270631845
+861,861,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",759.850238799154
+862,862,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",369.7691892341
+863,863,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",59.5575069663101
+864,864,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",375.6245200383
+865,865,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",901.050745501973
+866,866,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",808.886270920349
+867,867,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",502.168307910113
+868,868,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1471.87162018819
+869,869,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1096.61954666522
+870,870,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",203.276455627733
+871,871,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",309.650683350554
+872,872,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",106.800700904884
+873,873,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",93.6798784545443
+874,874,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",53.9202546883828
+875,875,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",464.880263202855
+876,876,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",214.698382825866
+877,877,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1242.46694882725
+878,878,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",335.325253017197
+879,879,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",189.589278271799
+880,880,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",299.389141782571
+881,881,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1729.68515899147
+882,882,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",121.741544534752
+883,883,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",933.381988960882
+884,884,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",82.1953986096107
+885,885,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",601.28980300861
+886,886,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",116.674589526832
+887,887,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",265.048318841446
+888,888,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",368.413090791947
+889,889,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",86.9570449661906
+890,890,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",159.193991183422
+891,891,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",241.482694341922
+892,892,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",463.007575504046
+893,893,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",131.209506578713
+894,894,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",122.50283335713
+895,895,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",402.00844261643
+896,896,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1074.41393976756
+897,897,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",169.024392642547
+898,898,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",443.635925375318
+899,899,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",76.2021308385898
+900,900,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",209.107346957115
+901,901,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",101.214021852781
+902,902,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",45.0312826137046
+903,903,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",90.8670491391307
+904,904,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",98.2970594464576
+905,905,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",242.432292513334
+906,906,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",181.838728303132
+907,907,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1035.68098558714
+908,908,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",74.8202025418171
+909,909,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",450.86143833565
+910,910,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",43.1561912886596
+911,911,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",85.9048672093903
+912,912,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",59.5585533847451
+913,913,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",476.337834305844
+914,914,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1282.94829183119
+915,915,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",515.913372718564
+916,916,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",201.258442793318
+917,917,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",777.11885342898
+918,918,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",42.1534397523277
+919,919,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",499.208779903007
+920,920,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",87.7376084586486
+921,921,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",91.7514993238919
+922,922,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",497.60383810751
+923,923,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1645.81607152099
+924,924,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1396.26671544566
+925,925,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",239.731343114266
+926,926,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",207.461059922314
+927,927,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",70.2269311521989
+928,928,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1429.49084310896
+929,929,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",140.058039787526
+930,930,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",794.022404194924
+931,931,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",483.703735078002
+932,932,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",297.543247114277
+933,933,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",97.3634666218541
+934,934,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",131.504356232298
+935,935,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",48.0938024997668
+936,936,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",138.186222925063
+937,937,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",216.839579508465
+938,938,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",316.034304169601
+939,939,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",480.648391830692
+940,940,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",311.364355376616
+941,941,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",483.490384744804
+942,942,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",178.209505978905
+943,943,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",684.321008517781
+944,944,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",179.51922009643
+945,945,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",478.068460800872
+946,946,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",460.045808117956
+947,947,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",609.453778765934
+948,948,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",568.073366419215
+949,949,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",259.821642406531
+950,950,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1023.5433785953
+951,951,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",308.588890901177
+952,952,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1175.48849574177
+953,953,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",102.809971920009
+954,954,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1287.20359887031
+955,955,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",138.242384273155
+956,956,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",149.684866740825
+957,957,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",97.1011401789478
+958,958,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",427.571986243464
+959,959,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1006.86272454421
+960,960,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",603.521677661833
+961,961,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",126.836540033947
+962,962,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1129.41396010729
+963,963,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",870.907225841986
+964,964,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",240.119362500554
+965,965,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",668.495724858988
+966,966,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",915.891926838377
+967,967,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1185.6608408441
+968,968,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",96.5311952357807
+969,969,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",122.441706363829
+970,970,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",620.063512880296
+971,971,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",547.154428368137
+972,972,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",495.61431700665
+973,973,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",167.181981177825
+974,974,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3802.89807193203
+975,975,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",88.6578878206013
+976,976,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",624.524011057189
+977,977,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",985.230648083902
+978,978,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1096.77625098259
+979,979,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",122.35635445869
+980,980,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",159.953712076616
+981,981,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1210.50268294635
+982,982,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",182.372169258255
+983,983,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",461.960716288822
+984,984,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",505.551933117796
+985,985,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1358.374286144
+986,986,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",360.506816840424
+987,987,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1143.68825251581
+988,988,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",797.76063191982
+989,989,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1061.19238543994
+990,990,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",836.580067390385
+991,991,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",760.558976781193
+992,992,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",734.180158211753
+993,993,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",369.706282495223
+994,994,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",709.161685374367
+995,995,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",880.609927770563
+996,996,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",282.245439194133
+997,997,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1669.13685373768
+998,998,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",118.025947263601
+999,999,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1273.50666033766
+1000,1000,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",188.686726846232
+1001,1001,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",286.918908870446
+1002,1002,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",283.120151392763
+1003,1003,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",478.652860402166
+1004,1004,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",43.3093033198519
+1005,1005,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",260.4879871497
+1006,1006,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",842.811037352886
+1007,1007,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",232.76753589865
+1008,1008,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",378.550172162706
+1009,1009,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",241.193151840033
+1010,1010,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",260.457981431498
+1011,1011,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",316.354316459809
+1012,1012,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2144.07969778462
+1013,1013,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",206.493938934434
+1014,1014,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2468.99339590133
+1015,1015,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",663.323030024289
+1016,1016,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",925.427760025463
+1017,1017,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1372.73918110103
+1018,1018,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1123.80790541519
+1019,1019,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1779.1750208823
+1020,1020,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",60.0669948325802
+1021,1021,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",542.587245937694
+1022,1022,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",116.60977329808
+1023,1023,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1263.43402668309
+1024,1024,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2975.32528058611
+1025,1025,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1638.16140512756
+1026,1026,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1365.06268657801
+1027,1027,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",574.288636578773
+1028,1028,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",211.92974919059
+1029,1029,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",838.883111111167
+1030,1030,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1110.84835416103
+1031,1031,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",751.35077276882
+1032,1032,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1178.75258258867
+1033,1033,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",907.133923044786
+1034,1034,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",743.677299418849
+1035,1035,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",949.448906518413
+1036,1036,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1647.12944502194
+1037,1037,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1260.76234762617
+1038,1038,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",695.184087580254
+1039,1039,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",739.269146573345
+1040,1040,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1170.03810800789
+1041,1041,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1089.04618101467
+1042,1042,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",587.910087444994
+1043,1043,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1489.51777458341
+1044,1044,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",845.584257952675
+1045,1045,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1262.15844667228
+1046,1046,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",248.183930860239
+1047,1047,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",2052.90331606064
+1048,1048,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1145.44260630822
+1049,1049,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",639.084137131764
+1050,1050,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1260.69752612108
+1051,1051,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",640.640753188156
+1052,1052,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1235.88796809032
+1053,1053,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",141.593849681871
+1054,1054,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3591.96031905069
+1055,1055,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",68.8433978972767
+1056,1056,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",2410.11100667226
+1057,1057,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1106.59056254264
+1058,1058,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",2759.91441222621
+1059,1059,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2025.24124877982
+1060,1060,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",3857.93420329665
+1061,1061,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",976.460339794312
+1062,1062,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2925.91178580936
+1063,1063,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",507.729842283904
+1064,1064,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1643.21496961663
+1065,1065,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",533.010122775737
+1066,1066,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1898.22734391474
+1067,1067,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",419.94415855033
+1068,1068,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",5547.57806901813
+1069,1069,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1392.11137013839
+1070,1070,Hawaii,mloa,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",1319.801076585
+1071,1071,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",678.297552231915
+1072,1072,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2697.38047551391
+1073,1073,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1810.36035115871
+1074,1074,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2446.83212535316
+1075,1075,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1375.57696989959
+1076,1076,Hawaii,mloa,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1379.91671193628
+1077,1077,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3097.15864954101
+1078,1078,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",180.505024799419
+1079,1079,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",430.240808944794
+1080,1080,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1274.30696813125
+1081,1081,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1072.47996151953
+1082,1082,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1901.77674107388
+1083,1083,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",202.205218477602
+1084,1084,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1161.16476591727
+1085,1085,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",264.143039947585
+1086,1086,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1393.29269140952
+1087,1087,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",301.298419706258
+1088,1088,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",381.994679058443
+1089,1089,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1805.54745299912
+1090,1090,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1053.67882069793
+1091,1091,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",314.273874498605
+1092,1092,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",39.6955695744671
+1093,1093,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",612.502481023263
+1094,1094,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",603.362655091665
+1095,1095,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",995.552145515153
+1096,1096,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1669.57771143483
+1097,1097,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",763.29559807772
+1098,1098,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1370.01715690411
+1099,1099,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",2680.77784466328
+1100,1100,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",567.231614880179
+1101,1101,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",1798.16252021228
+1102,1102,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",622.88629636668
+1103,1103,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",676.188848441646
+1104,1104,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",194.338470966248
+1105,1105,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",208.285843497261
+1106,1106,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",322.509333610671
+1107,1107,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",649.455285693139
+1108,1108,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",727.200143245865
+1109,1109,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",250.678437464223
+1110,1110,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",1160.38165431662
+1111,1111,Hawaii,kila,21,Normal fault well-located,Yes,Kilauea,"Wolfe and Morris, 1996a",344.24267277727
+1112,1112,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",191.83953023097
+1113,1113,Hawaii,kila,21,Normal fault well-located,Yes,Kilauea,"Wolfe and Morris, 1996a",240.010456465442
+1114,1114,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",940.120205062758
+1115,1115,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",996.685173687145
+1116,1116,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",67.6333494650089
+1117,1117,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",419.659449205808
+1118,1118,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",182.113815428738
+1119,1119,Hawaii,kila,24,Normal fault concealed,Yes,Kilauea,"Wolfe and Morris, 1996a",977.77454191897
+1120,1120,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",248.329336404209
+1121,1121,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",931.443627902024
+1122,1122,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",213.989620386645
+1123,1123,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",524.78360623949
+1124,1124,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",175.808171775628
+1125,1125,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1045.55418430045
+1126,1126,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",285.696995265028
+1127,1127,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",644.002348955868
+1128,1128,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",474.560846309435
+1129,1129,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",369.476738344621
+1130,1130,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",604.594335715431
+1131,1131,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",268.872485908535
+1132,1132,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",514.113384476751
+1133,1133,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",606.009096564112
+1134,1134,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",239.490562729253
+1135,1135,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",134.641802339965
+1136,1136,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",285.411294946333
+1137,1137,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1471.4075274852
+1138,1138,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",851.224818169015
+1139,1139,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",839.615282412312
+1140,1140,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",28.4526015622073
+1141,1141,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1122.24587978473
+1142,1142,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",888.713382115813
+1143,1143,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",327.832852153631
+1144,1144,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",71.9645325915346
+1145,1145,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",112.599996571835
+1146,1146,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",679.104414637227
+1147,1147,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",464.453423186035
+1148,1148,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",195.839157816811
+1149,1149,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",119.551107552092
+1150,1150,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",464.770543149461
+1151,1151,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",930.090021253897
+1152,1152,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",220.291467914675
+1153,1153,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2801.70811996304
+1154,1154,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",173.666355571367
+1155,1155,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",3116.91151665192
+1156,1156,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",2912.58430319155
+1157,1157,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1996.04927479644
+1158,1158,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1635.13190033427
+1159,1159,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",804.223483220114
+1160,1160,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1703.84609151943
+1161,1161,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",286.701822997911
+1162,1162,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",712.703329415926
+1163,1163,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",232.446320965875
+1164,1164,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",358.026491002546
+1165,1165,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",780.981903334353
+1166,1166,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",4771.69202402446
+1167,1167,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",2833.32136492441
+1168,1168,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",760.456331698737
+1169,1169,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1396.87116103092
+1170,1170,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",37.1412602914808
+1171,1171,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",250.286895060686
+1172,1172,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",937.14407543969
+1173,1173,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",272.978092465374
+1174,1174,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",946.54035119362
+1175,1175,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",79.2706139956263
+1176,1176,Hawaii,kila,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",2172.21414634065
+1177,1177,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",639.795762507482
+1178,1178,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",513.07512221295
+1179,1179,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",675.250074587257
+1180,1180,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1399.92198267845
+1181,1181,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",3060.56838768815
+1182,1182,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",696.795723928523
+1183,1183,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",5404.42660548904
+1184,1184,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2788.44089868548
+1185,1185,Hawaii,koha,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1844.99145469457
+1186,1186,Hawaii,koha,22,Normal fault approximately located,,,"Wolfe and Morris, 1996a",612.012564542899
+1187,1187,Hawaii,koha,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",442.453557088456
+1188,1188,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",1329.76544372657
+1189,1189,Hawaii,mloa,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",2404.7964286097
+1190,1190,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",515.861832428974
+1191,1191,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",565.629274596521
+1192,1192,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",686.402158022436
+1193,1193,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",304.062529041882
+1194,1194,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",1158.67232668294
+1195,1195,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",281.386080661059
+1196,1196,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",186.721379060689
+1197,1197,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",140.7497707656
+1198,1198,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",116.81001816144
+1199,1199,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",62.6090159446828
+1200,1200,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",99.0627897891068
+1201,1201,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",136.059401258792
+1202,1202,Kahoolawe,khoo,25,Normal fault flooded,,,"Stearns, 1940c",569.730484288559
+1203,1203,Kahoolawe,khoo,25,Normal fault flooded,,,"Stearns, 1940c",266.977657972606
+1204,1204,Kahoolawe,khoo,25,Normal fault flooded,,,"Stearns, 1940c",440.302227509253
+1205,1205,Kahoolawe,khoo,25,Normal fault flooded,,,"Stearns, 1940c",1185.648398499
+1206,1206,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",55.2164487454688
+1207,1207,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",57.9968582706202
+1208,1208,Kahoolawe,khoo,25,Normal fault flooded,,,"Stearns, 1940c",341.998759600319
+1209,1209,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",32.4649884784755
+1210,1210,Kahoolawe,khoo,24,Normal fault concealed,Yes,Kahoolawe,"Stearns, 1940c",7996.37122461367
+1211,1211,Kahoolawe,khoo,22,Normal fault approximately located,Yes,Kahoolawe,"Stearns, 1940c",578.215750086416
+1212,1212,Kahoolawe,khoo,22,Normal fault approximately located,Yes,Kahoolawe,"Stearns, 1940c",201.20445931388
+1213,1213,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",81.4429724377954
+1214,1214,Kahoolawe,khoo,22,Normal fault approximately located,,,"Stearns, 1940c",175.709753278728
+1215,1215,Kahoolawe,khoo,25,Normal fault flooded,,,"Stearns, 1940c",845.488649731288
+1216,1216,Kahoolawe,khoo,25,Normal fault flooded,Yes,Kahoolawe,"Stearns, 1940c",4475.32397500727
+1217,1217,Kahoolawe,khoo,22,Normal fault approximately located,Yes,Kahoolawe,"Stearns, 1940c",783.067594380077
+1218,1218,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",263.655727603536
+1219,1219,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",88.3842880029288
+1220,1220,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",3885.43681418053
+1221,1221,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",885.495999665422
+1222,1222,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",848.141010786029
+1223,1223,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",470.272747073106
+1224,1224,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",4076.07669418218
+1225,1225,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",2142.00913592711
+1226,1226,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",859.274118492486
+1227,1227,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",1371.05017668697
+1228,1228,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",1065.35238827421
+1229,1229,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",114.287993460266
+1230,1230,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",200.475961554763
+1231,1231,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",1628.36006026218
+1232,1232,Kauai,kaua,26,Normal fault queried,,,"Macdonald and others, 1960",1734.45360951163
+1233,1233,Kauai,kaua,26,Normal fault queried,,,"Macdonald and others, 1960",703.890695116747
+1234,1234,Kauai,kaua,22,Normal fault approximately located,,,"Macdonald and others, 1960",4156.1152500134
+1235,1235,Kauai,kaua,22,Normal fault approximately located,,,"Macdonald and others, 1960",392.438159118404
+1236,1236,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",2264.57861489767
+1237,1237,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",6687.61825981556
+1238,1238,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",21342.4363487753
+1239,1239,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",1227.57140785616
+1240,1240,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",1689.79651139932
+1241,1241,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",733.325598270607
+1242,1242,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",3119.01041815773
+1243,1243,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",1422.44912577002
+1244,1244,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",1764.74892532376
+1245,1245,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",684.72820285183
+1246,1246,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",806.636263607334
+1247,1247,Kauai,kaua,22,Normal fault approximately located,,,"Macdonald and others, 1960",507.200489190266
+1248,1248,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",577.483438456944
+1249,1249,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",2854.08959229854
+1250,1250,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",1191.97921270057
+1251,1251,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",11176.6778939781
+1252,1252,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",2511.98323043869
+1253,1253,Kauai,kaua,21,Normal fault well-located,Yes,Olokele,"Macdonald and others, 1960",946.000258952588
+1254,1254,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",637.763965117684
+1255,1255,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",1274.26702058946
+1256,1256,Kauai,kaua,22,Normal fault approximately located,,,"Macdonald and others, 1960",185.95853324696
+1257,1257,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",321.281044184603
+1258,1258,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",107.232386159455
+1259,1259,Kauai,kaua,22,Normal fault approximately located,Yes,Olokele,"Macdonald and others, 1960",2646.2430210627
+1260,1260,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",932.938581822384
+1261,1261,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",6893.58798801672
+1262,1262,Kauai,kaua,22,Normal fault approximately located,,,"Macdonald and others, 1960",3334.69134128979
+1263,1263,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",535.420513989992
+1264,1264,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",902.773010084481
+1265,1265,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",1267.96946369771
+1266,1266,Kauai,kaua,21,Normal fault well-located,,,"Macdonald and others, 1960",1125.0563443567
+1267,1267,Kauai,kaua,24,Normal fault concealed,Yes,Olokele,"Macdonald and others, 1960",449.741094308977
+1268,1268,Kauai,kaua,24,Normal fault concealed,Yes,Olokele,"Macdonald and others, 1960",1118.2277660637
+1269,1269,Kauai,kaua,24,Normal fault concealed,Yes,Olokele,"Macdonald and others, 1960",373.257013274538
+1270,1270,Kauai,kaua,24,Normal fault concealed,,,"Macdonald and others, 1960",554.114925306104
+1271,1271,Kauai,kaua,24,Normal fault concealed,,,"Macdonald and others, 1960",858.095689087265
+1272,1272,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",439.508317652709
+1273,1273,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",436.32555048866
+1274,1274,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",651.777557862013
+1275,1275,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1001.42208547441
+1276,1276,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1579.4771326644
+1277,1277,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",862.44603843443
+1278,1278,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",741.335893368566
+1279,1279,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",876.333134505396
+1280,1280,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",905.791786176072
+1281,1281,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",707.824903019161
+1282,1282,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1512.13755345159
+1283,1283,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1588.64486971585
+1284,1284,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",666.334462873226
+1285,1285,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",822.567342802771
+1286,1286,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1051.84711707131
+1287,1287,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",2293.08115041362
+1288,1288,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",2611.10190879659
+1289,1289,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1337.86054031111
+1290,1290,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1365.46577225111
+1291,1291,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",860.180804626657
+1292,1292,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",693.234679232536
+1293,1293,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",167.997877772197
+1294,1294,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",896.043949379763
+1295,1295,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",868.835544946132
+1296,1296,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2725.57570536422
+1297,1297,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2439.06680457677
+1298,1298,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",379.545940324825
+1299,1299,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2304.48976117806
+1300,1300,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",687.592806573023
+1301,1301,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",126.206118489298
+1302,1302,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",195.490970292186
+1303,1303,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",411.013916635355
+1304,1304,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",559.845174488633
+1305,1305,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1703.9144194941
+1306,1306,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1249.39274859494
+1307,1307,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1409.41644015437
+1308,1308,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",463.198370716126
+1309,1309,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",385.975791865823
+1310,1310,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",650.420894418115
+1311,1311,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1365.45074738327
+1312,1312,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",793.344116524667
+1313,1313,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",858.420230353113
+1314,1314,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2243.82746708107
+1315,1315,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1514.15159117278
+1316,1316,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1515.96718822294
+1317,1317,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",221.272703901572
+1318,1318,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",3953.13600987731
+1319,1319,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",429.068802082806
+1320,1320,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2727.79274641391
+1321,1321,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",589.523053760431
+1322,1322,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",596.808372375967
+1323,1323,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",220.275101809715
+1324,1324,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",808.563105235818
+1325,1325,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",933.134059733098
+1326,1326,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",975.414168377247
+1327,1327,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",615.059221610147
+1328,1328,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1442.39619118161
+1329,1329,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",4376.30382372764
+1330,1330,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",618.377802064418
+1331,1331,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2887.62710147013
+1332,1332,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",3962.91615305154
+1333,1333,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1849.71464343605
+1334,1334,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",3703.54288805017
+1335,1335,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",901.586861716605
+1336,1336,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",325.685015624654
+1337,1337,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2449.82709029321
+1338,1338,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1658.65574387793
+1339,1339,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1342.29926127209
+1340,1340,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",180.890256437235
+1341,1341,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",2733.33341843301
+1342,1342,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",587.232795203928
+1343,1343,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1054.7624340655
+1344,1344,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1245.4203801421
+1345,1345,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",3572.96874049369
+1346,1346,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",4386.97545885006
+1347,1347,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",3864.06359952363
+1348,1348,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1883.6194158571
+1349,1349,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",775.349558519537
+1350,1350,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",735.396484755644
+1351,1351,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",612.844915847449
+1352,1352,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",676.243968237189
+1353,1353,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",3179.29023511074
+1354,1354,Lanai,lana,22,Normal fault approximately located,,,"Stearns, 1940b",1529.37872666884
+1355,1355,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",534.534813252234
+1356,1356,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1018.01392644563
+1357,1357,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",607.687109128183
+1358,1358,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",342.884558659728
+1359,1359,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",442.719411916191
+1360,1360,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1026.00922353134
+1361,1361,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",358.084714001743
+1362,1362,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",921.497453101435
+1363,1363,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",560.071800808065
+1364,1364,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",626.524628552122
+1365,1365,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",706.605099906562
+1366,1366,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",766.154920674562
+1367,1367,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",928.010370225243
+1368,1368,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",625.654172343064
+1369,1369,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",5723.80574571053
+1370,1370,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",396.198049940602
+1371,1371,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",1401.62134076549
+1372,1372,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",636.461003114908
+1373,1373,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",3264.48605751404
+1374,1374,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",752.633057657402
+1375,1375,Lanai,lana,24,Normal fault concealed,,,"Stearns, 1940b",4575.05651998561
+1376,1376,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1054.44387250228
+1377,1377,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1263.6551034213
+1378,1378,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",3287.27120767669
+1379,1379,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",778.159235467904
+1380,1380,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1169.21231078063
+1381,1381,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1872.28877903581
+1382,1382,Lanai,lana,23,Normal fault inferred,,,"Stearns, 1940b",1679.97493361444
+1383,1383,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",853.569128417509
+1384,1384,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",689.998955885155
+1385,1385,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",832.94352313087
+1386,1386,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1052.02249713609
+1387,1387,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1180.01188653313
+1388,1388,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1045.0523599617
+1389,1389,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",741.091579262221
+1390,1390,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",492.378306241402
+1391,1391,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",516.675582877247
+1392,1392,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",894.016911370492
+1393,1393,Lanai,lana,21,Normal fault well-located,,,"Stearns, 1940b",1043.19848490176
+1394,1394,Maui,hale,21,Normal fault well-located,,,Sherrod_2004a,227.979649130763
+1395,1395,Maui,hale,24,Normal fault concealed,,,Sherrod_2004a,95.605439770217
+1396,1396,Maui,hale,24,Normal fault concealed,,,Sherrod_2004a,64.5247993634757
+1397,1397,Maui,hale,24,Normal fault concealed,,,Sherrod_2004a,1167.06044939135
+1398,1398,Maui,hale,21,Normal fault well-located,,,Sherrod_2004a,167.057685491606
+1399,1399,Maui,wmau,22,Normal fault approximately located,,,"Stearns and Macdonald, 1942",656.524478649268
+1400,1400,Maui,wmau,24,Normal fault concealed,Yes,West Maui,"Stearns and Macdonald, 1942",3234.89799030609
+1401,1401,Maui,wmau,21,Normal fault well-located,Yes,West Maui,"Stearns and Macdonald, 1942",1613.09165057808
+1402,1402,Maui,wmau,23,Normal fault inferred,Yes,West Maui,"Stearns and Macdonald, 1942",769.63022020212
+1403,1403,Maui,wmau,23,Normal fault inferred,Yes,West Maui,"Stearns and Macdonald, 1942",1875.45617117556
+1404,1404,Maui,wmau,23,Normal fault inferred,Yes,West Maui,"Stearns and Macdonald, 1942",1050.59750740612
+1405,1405,Maui,wmau,23,Normal fault inferred,Yes,West Maui,"Stearns and Macdonald, 1942",836.445125665776
+1406,1406,Maui,wmau,22,Normal fault approximately located,Yes,West Maui,"Stearns and Macdonald, 1942",568.359005585567
+1407,1407,Maui,wmau,22,Normal fault approximately located,Yes,West Maui,"Stearns and Macdonald, 1942",925.854961099177
+1408,1408,Maui,wmau,21,Normal fault well-located,,,"Stearns and Macdonald, 1942",502.026743728937
+1409,1409,Molokai,emol,22,Normal fault approximately located,Yes,East Molokai,"Stearns and Macdonald, 1947",10875.2207605057
+1410,1410,Molokai,emol,22,Normal fault approximately located,Yes,East Molokai,"Stearns and Macdonald, 1947",6657.88879429055
+1411,1411,Molokai,emol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",3197.67198377901
+1412,1412,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",105.413840129054
+1413,1413,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",188.536845033921
+1414,1414,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",487.009943416768
+1415,1415,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",319.517662561084
+1416,1416,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",618.078475986987
+1417,1417,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",530.294358269229
+1418,1418,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",226.996737961897
+1419,1419,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",364.236307995582
+1420,1420,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",571.615456597084
+1421,1421,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",644.872631736868
+1422,1422,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",640.527846916305
+1423,1423,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",315.0153890847
+1424,1424,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",453.776648144799
+1425,1425,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",428.153029520129
+1426,1426,Molokai,emol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",588.639356183405
+1427,1427,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",2423.2333197913
+1428,1428,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",640.451913285358
+1429,1429,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",1429.51204570228
+1430,1430,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",1176.90358769473
+1431,1431,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",76.1797633583562
+1432,1432,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",969.754629037568
+1433,1433,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",1447.39215893283
+1434,1434,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",5983.90124968568
+1435,1435,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",1002.61881888292
+1436,1436,Molokai,wmol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",1353.13988618611
+1437,1437,Molokai,wmol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",1384.34903275698
+1438,1438,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",1069.17644077421
+1439,1439,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",1403.28341256002
+1440,1440,Molokai,wmol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",746.694482649312
+1441,1441,Molokai,wmol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",1723.88066285417
+1442,1442,Molokai,wmol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",1293.7539269855
+1443,1443,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",445.37476907021
+1444,1444,Molokai,wmol,22,Normal fault approximately located,,,"Stearns and Macdonald, 1947",785.439810618497
+1445,1445,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",973.573309440013
+1446,1446,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",162.628295899331
+1447,1447,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",661.645186676097
+1448,1448,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",1734.09792397459
+1449,1449,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",1113.21532901313
+1450,1450,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",199.635300405415
+1451,1451,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",520.475643547199
+1452,1452,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",361.693499501632
+1453,1453,Molokai,emol,25,Normal fault flooded,,,"Stearns and Macdonald, 1947",1350.02151782452
+1454,1454,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",101.833922222679
+1455,1455,Molokai,wmol,24,Normal fault concealed,,,"Stearns and Macdonald, 1947",412.185080804579
+1456,1456,Molokai,wmol,21,Normal fault well-located,,,"Stearns and Macdonald, 1947",195.76049623695
+1457,1457,Oahu,waia,21,Normal fault well-located,,,"Sinton, 2004",491.606645987223
+1458,1458,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",506.909627501846
+1459,1459,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",1059.39610314139
+1460,1460,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",1539.36676287667
+1461,1461,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",1051.8417029117
+1462,1462,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",822.93872848612
+1463,1463,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",117.535649233255
+1464,1464,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",528.731907578112
+1465,1465,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",467.89841403051
+1466,1466,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",19.7850747486926
+1467,1467,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",2234.40262266733
+1468,1468,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",1724.83354240648
+1469,1469,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",289.134364313207
+1470,1470,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",183.870774682509
+1471,1471,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",190.181457835453
+1472,1472,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",501.137689302917
+1473,1473,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",290.592991023546
+1474,1474,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",274.238385298167
+1475,1475,Oahu,waia,21,Normal fault well-located,,,"Sinton, 2004",378.408910208417
+1476,1476,Oahu,waia,22,Normal fault approximately located,,,"Sinton, 2004",461.263801831886
+1477,1477,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",328.758343766458
+1478,1478,Oahu,waia,22,Normal fault approximately located,,,"Sinton, 2004",276.8124466367
+1479,1479,Oahu,waia,22,Normal fault approximately located,,,"Sinton, 2004",234.954131629872
+1480,1480,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",5538.15881715252
+1481,1481,Oahu,waia,22,Normal fault approximately located,Yes,Waianae,"Sinton, 2004",2097.4810195155
+1482,1482,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",1501.38146664103
+1483,1483,Oahu,waia,24,Normal fault concealed,Yes,Waianae,"Sinton, 2004",354.845567459213
+1484,1484,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",53.9447971200634
+1485,1485,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",59.5849366630864
+1486,1486,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",70.2041230620754
+1487,1487,Hawaii,kila,24,Normal fault concealed,,,"Wolfe and Morris, 1996a",46.1400490931341
+1488,1488,Hawaii,kila,21,Normal fault well-located,,,"Wolfe and Morris, 1996a",53.3044182049062
+1489,1489,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,223.338323437812
+1490,1490,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,233.437326977114
+1491,1491,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,163.866431716306
+1492,1492,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,72.5283420483333
+1493,1493,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,839.329561820346
+1494,1494,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,97.8055561782036
+1495,1495,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,318.138865927724
+1496,1496,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,200.421782637524
+1497,1497,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,127.809974856571
+1498,1498,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,1075.66646420492
+1499,1499,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,42.833175896086
+1500,1500,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,295.357882337298
+1501,1501,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,216.168870121972
+1502,1502,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,86.6500497647016
+1503,1503,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,72.2064954210871
+1504,1504,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,89.8314867074178
+1505,1505,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,401.149702843215
+1506,1506,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,299.44135789012
+1507,1507,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,48.6687298947721
+1508,1508,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,153.650677864971
+1509,1509,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,168.023043761509
+1510,1510,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,254.517785472408
+1511,1511,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,734.252833663845
+1512,1512,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,683.256305365693
+1513,1513,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,53.4990236955266
+1514,1514,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,247.220292061845
+1515,1515,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,442.633373177515
+1516,1516,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,74.7617607775719
+1517,1517,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,561.109641495303
+1518,1518,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,304.496545858653
+1519,1519,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,41.5455410307143
+1520,1520,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,182.167451910425
+1521,1521,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,80.0790184613003
+1522,1522,Hawaii,kila,24,Normal fault concealed,,,Neal and Sherrod_2004,381.988059657172
+1523,1523,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,328.864321052249
+1524,1524,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,642.643953470735
+1525,1525,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,348.778965321735
+1526,1526,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,92.1293939629319
+1527,1527,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,589.18246898748
+1528,1528,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,252.046845642067
+1529,1529,Hawaii,kila,21,Normal fault well-located,,,Neal and Sherrod_2004,83.4099290521634
+1530,1530,Maui,hale,21,Normal fault well-located,,,Sherrod_2004a,138.649274626228
+1531,1531,Maui,hale,24,Normal fault concealed,,,Sherrod_2004a,84.1985129278936
