@@ -11,7 +11,7 @@ const Plot = dynamic(() => import("react-plotly.js"), {
 function MapArea() {
   const data: Data[] = [
     {
-      type: "scattermapbox",
+      type: "scattergeo",
       lon: [-157.8583],
       lat: [21.3069],
       mode: "markers",
