@@ -124,7 +124,7 @@ function CheckboxPanel() {
             backgroundColor: "#523949ff",
             fontSize: "0.85rem",
             cursor: "pointer",
-            textAlign: "left"
+            textAlign: "center"
           }}
         >
           Download Selected Data Sets
