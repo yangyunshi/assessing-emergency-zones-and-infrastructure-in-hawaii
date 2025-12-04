@@ -162,7 +162,7 @@ function CheckboxPanel() {
               fontSize: "0.95rem"
             }}
           >
-            Tsunami Disasters
+            Tsunami and Flooding Disasters
           </span>
           <button
             type="button"
@@ -190,7 +190,7 @@ function CheckboxPanel() {
           }}
         >
           <label>
-            <input type="checkbox" /> Tsunami and Flooding Risk Zones
+            <input type="checkbox" /> Tsunami Risk Zones
           </label>
           <label>
             <input type="checkbox" /> Rainfall (mm)
