@@ -10,6 +10,7 @@ function CheckboxPanel() {
       }}
     >
       {/* Card with three checkboxes */}
+      {/* Card 1 */}
       <section
         style={{
           backgroundColor: "#ffffff",
@@ -33,7 +34,7 @@ function CheckboxPanel() {
               fontSize: "0.95rem"
             }}
           >
-            Title
+            General Safety Infrastructure
           </span>
           <button
             type="button"
@@ -61,13 +62,141 @@ function CheckboxPanel() {
           }}
         >
           <label>
-            <input type="checkbox" /> Item 1
+            <input type="checkbox" /> Police Stations
           </label>
           <label>
-            <input type="checkbox" /> Item 2
+            <input type="checkbox" /> Emergency Sirens
           </label>
           <label>
-            <input type="checkbox" /> Item 3
+            <input type="checkbox" /> Hurricane Shelters
+          </label>
+        </div>
+      </section>
+
+      {/* Card with three checkboxes */}
+      {/* Card 2 */}
+      <section
+        style={{
+          backgroundColor: "#ffffff",
+          borderRadius: "8px",
+          padding: "12px 14px",
+          boxShadow: "0 1px 4px rgba(0,0,0,0.15)",
+          marginBottom: "12px"
+        }}
+      >
+        <header
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "8px"
+          }}
+        >
+          <span
+            style={{
+              fontWeight: 600,
+              fontSize: "0.95rem"
+            }}
+          >
+            Fire Disasters
+          </span>
+          <button
+            type="button"
+            aria-label="Help"
+            style={{
+              width: "20px",
+              height: "20px",
+              borderRadius: "50%",
+              border: "none",
+              backgroundColor: "#e0e0e0",
+              fontSize: "0.8rem",
+              cursor: "default"
+            }}
+          >
+            ?
+          </button>
+        </header>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "4px",
+            fontSize: "0.9rem"
+          }}
+        >
+          <label>
+            <input type="checkbox" /> Fire Stations
+          </label>
+          <label>
+            <input type="checkbox" /> Fire Risk Zones
+          </label>
+          <label>
+            <input type="checkbox" /> Lava Flow Zones
+          </label>
+        </div>
+      </section>
+
+      {/* Card with three checkboxes */}
+      {/* Card 3 */}
+      <section
+        style={{
+          backgroundColor: "#ffffff",
+          borderRadius: "8px",
+          padding: "12px 14px",
+          boxShadow: "0 1px 4px rgba(0,0,0,0.15)",
+          marginBottom: "12px"
+        }}
+      >
+        <header
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "8px"
+          }}
+        >
+          <span
+            style={{
+              fontWeight: 600,
+              fontSize: "0.95rem"
+            }}
+          >
+            Tsunami Disasters
+          </span>
+          <button
+            type="button"
+            aria-label="Help"
+            style={{
+              width: "20px",
+              height: "20px",
+              borderRadius: "50%",
+              border: "none",
+              backgroundColor: "#e0e0e0",
+              fontSize: "0.8rem",
+              cursor: "default"
+            }}
+          >
+            ?
+          </button>
+        </header>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "4px",
+            fontSize: "0.9rem"
+          }}
+        >
+          <label>
+            <input type="checkbox" /> Tsunami and Flooding Risk Zones
+          </label>
+          <label>
+            <input type="checkbox" /> Rainfall (mm)
+          </label>
+          <label>
+            <input type="checkbox" /> Earthquake Fault Lines
           </label>
         </div>
       </section>
