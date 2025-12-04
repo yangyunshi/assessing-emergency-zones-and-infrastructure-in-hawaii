@@ -1,7 +1,24 @@
+"use client";
+
+import { useState } from "react";
 import CheckboxPanel from "./components/CheckboxPanel";
 import MapArea from "./components/MapArea";
 
 export default function HomePage() {
+  // What the checkbox currently shows
+  const [pendingSirens, setPendingSirens] = useState(true);
+
+  // What the map is actually using
+  const [showSirens, setShowSirens] = useState(true);
+
+  const handleToggleSirens = () => {
+    setPendingSirens((prev) => !prev);
+  };
+
+  const handleUpdateMap = () => {
+    setShowSirens(pendingSirens);
+  };
+
   return (
     <main
       style={{
@@ -11,6 +28,7 @@ export default function HomePage() {
         backgroundColor: "#d6d6d6"
       }}
     >
+      {/* Top bar */}
       <header
         style={{
           height: "40px",
@@ -26,6 +44,7 @@ export default function HomePage() {
         Assessing Natural Disaster Risk in Hawaiʻi
       </header>
 
+      {/* Content area */}
       <section
         style={{
           flexGrow: 1,
@@ -34,6 +53,7 @@ export default function HomePage() {
           boxSizing: "border-box"
         }}
       >
+        {/* Left sidebar */}
         <aside
           style={{
             width: "260px",
@@ -45,10 +65,14 @@ export default function HomePage() {
             marginRight: "12px"
           }}
         >
-          <CheckboxPanel />
+          <CheckboxPanel
+            pendingSirens={pendingSirens}
+            onToggleSirens={handleToggleSirens}
+            onUpdateMap={handleUpdateMap}
+          />
         </aside>
 
-        {/* Map area: MapArea fills this completely */}
+        {/* Map area */}
         <section
           style={{
             flexGrow: 1,
@@ -59,7 +83,7 @@ export default function HomePage() {
             boxShadow: "0 1px 4px rgba(0,0,0,0.1)"
           }}
         >
-          <MapArea />
+          <MapArea showSirens={showSirens} />
         </section>
       </section>
     </main>

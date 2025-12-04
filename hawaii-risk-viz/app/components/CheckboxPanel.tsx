@@ -1,6 +1,14 @@
-// app/components/CheckboxPanel.tsx
+interface CheckboxPanelProps {
+  pendingSirens: boolean;
+  onToggleSirens: () => void;
+  onUpdateMap: () => void;
+}
 
-function CheckboxPanel() {
+function CheckboxPanel({
+  pendingSirens,
+  onToggleSirens,
+  onUpdateMap
+}: CheckboxPanelProps) {
   return (
     <div
       style={{
@@ -9,7 +17,7 @@ function CheckboxPanel() {
         height: "100%"
       }}
     >
-      {/* Card with three checkboxes */}
+      {/* Card with one working checkbox for now */}
       <section
         style={{
           backgroundColor: "#ffffff",
@@ -33,7 +41,7 @@ function CheckboxPanel() {
               fontSize: "0.95rem"
             }}
           >
-            Title
+            Layers
           </span>
           <button
             type="button"
@@ -56,18 +64,17 @@ function CheckboxPanel() {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "4px",
+            gap: "6px",
             fontSize: "0.9rem"
           }}
         >
           <label>
-            <input type="checkbox" /> Item 1
-          </label>
-          <label>
-            <input type="checkbox" /> Item 2
-          </label>
-          <label>
-            <input type="checkbox" /> Item 3
+            <input
+              type="checkbox"
+              checked={pendingSirens}
+              onChange={onToggleSirens}
+            />{" "}
+            Emergency Siren Locations
           </label>
         </div>
       </section>
@@ -75,7 +82,7 @@ function CheckboxPanel() {
       {/* Spacer pushes buttons to bottom */}
       <div style={{ flexGrow: 1 }} />
 
-      {/* Bottom buttons */}
+      {/* Buttons */}
       <div
         style={{
           display: "flex",
@@ -89,7 +96,7 @@ function CheckboxPanel() {
             padding: "8px 10px",
             borderRadius: "16px",
             border: "1px solid #888",
-            backgroundColor: "#3ac2a0ff",
+            backgroundColor: "#f2f2f2",
             fontSize: "0.9rem",
             cursor: "pointer",
             alignSelf: "flex-start"
@@ -100,6 +107,7 @@ function CheckboxPanel() {
 
         <button
           type="button"
+          onClick={onUpdateMap}
           style={{
             padding: "10px 16px",
             borderRadius: "18px",
@@ -121,7 +129,7 @@ function CheckboxPanel() {
             padding: "8px 10px",
             borderRadius: "16px",
             border: "1px solid #5c7d7a",
-            backgroundColor: "#523949ff",
+            backgroundColor: "#daeef2",
             fontSize: "0.85rem",
             cursor: "pointer",
             textAlign: "left"
