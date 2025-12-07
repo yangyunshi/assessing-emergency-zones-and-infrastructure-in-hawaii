@@ -1,6 +1,11 @@
 // app/components/CheckboxPanel.tsx
+"use client";
 
+import { useState } from "react";
+import AddLocation from "./AddLocation.tsx";
 function CheckboxPanel() {
+  const [openWindow, setOpenWindow] = useState(false);
+
   return (
     <div
       style={{
@@ -214,6 +219,7 @@ function CheckboxPanel() {
       >
         <button
           type="button"
+          onClick={() => setOpenWindow(true)}
           style={{
             padding: "8px 10px",
             borderRadius: "16px",
@@ -259,6 +265,8 @@ function CheckboxPanel() {
           Download Selected Data Sets
         </button>
       </div>
+
+      <AddLocation open={openWindow} onClose={() => setOpenWindow(false)} />
     </div>
   );
 }
