@@ -1,0 +1,709 @@
+{
+    "type":  "FeatureCollection",
+    "features":  [
+                     {
+                         "type":  "Feature",
+                         "id":  1,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -159.35498338689089,
+                                                              21.9770181218963
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  1,
+                                            "name":  "KAUAI COUNTY POLICE DEPARTMENT",
+                                            "island":  "Kauai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  2,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -159.47915342049478,
+                                                              22.212255396975884
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  2,
+                                            "name":  "HANALEI POLICE SUBSTATION",
+                                            "island":  "Kauai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  3,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -159.66714387552315,
+                                                              21.956696182174003
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  3,
+                                            "name":  "WAIMEA POLICE SUBSTATION",
+                                            "island":  "Kauai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  4,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -159.31957573879899,
+                                                              22.077692365956121
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  4,
+                                            "name":  "KAPAA POLICE SUBSTATION",
+                                            "island":  "Kauai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  5,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -159.46427914895929,
+                                                              21.903423883974511
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  5,
+                                            "name":  "KOLOA POLICE SUBSTATION",
+                                            "island":  "Kauai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  6,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.08522215123494,
+                                                              19.714881976245671
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  6,
+                                            "name":  "Hilo Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  7,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.23271047820072,
+                                                              19.982986248653972
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  7,
+                                            "name":  "Laupahoehoe Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  8,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.46251159992718,
+                                                              20.077147632734803
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  8,
+                                            "name":  "Honokaa Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  9,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.66165592923684,
+                                                              20.02384711858161
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  9,
+                                            "name":  "Waimea Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  10,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.83387077382889,
+                                                              19.946707427716369
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  10,
+                                            "name":  "Kalahuipua\u0027a",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  11,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.79827029351162,
+                                                              20.229908968733511
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  11,
+                                            "name":  "Kapaau Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  12,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -156.00696087970363,
+                                                              19.663716660436304
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  12,
+                                            "name":  "Kona Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  13,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.90944082830234,
+                                                              19.488932309744282
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  13,
+                                            "name":  "Captain Cook",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  14,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.77613244223198,
+                                                              19.084354297381214
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  14,
+                                            "name":  "Ocean View",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  15,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.56700245780266,
+                                                              19.067983898361351
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  15,
+                                            "name":  "Naalehu Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  16,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -154.95795152320227,
+                                                              19.508741065575826
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  16,
+                                            "name":  "Pahoa Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  17,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.04015502436198,
+                                                              19.620956710981616
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  17,
+                                            "name":  "Keaau",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  18,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.09205245226374,
+                                                              19.728863251631214
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  18,
+                                            "name":  "Clem Akina Park",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  19,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.08458758552706,
+                                                              19.724028381445621
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  19,
+                                            "name":  "Mooheau",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  20,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.01335225523607,
+                                                              19.735379105122906
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  20,
+                                            "name":  "Richardson",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  21,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.10486138570633,
+                                                              19.835185254303862
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  21,
+                                            "name":  "Pepeekeo",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  22,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.46780604965429,
+                                                              20.078908098856537
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  22,
+                                            "name":  "Honokaa Station",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  23,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.99442755124602,
+                                                              19.63979031245163
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  23,
+                                            "name":  "Kailua Village",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  24,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.96198738884198,
+                                                              19.571097944973872
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  24,
+                                            "name":  "Keauhou",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  25,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.10651516802116,
+                                                              19.665788774382548
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  25,
+                                            "name":  "Waiakea Uka",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  26,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.06580620141938,
+                                                              19.701979095617279
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  26,
+                                            "name":  "Holomua",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  27,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.79384407653038,
+                                                              19.924956494336698
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  27,
+                                            "name":  "Waikoloa",
+                                            "island":  "Hawaii"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  28,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -156.4881156482825,
+                                                              20.888163044897698
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  28,
+                                            "name":  "MPD",
+                                            "island":  "Maui"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  29,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.01811462787506,
+                                                              21.090642672693498
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  29,
+                                            "name":  "MOLOKAI POLICE",
+                                            "island":  "Molokai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  30,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -156.9210018127562,
+                                                              20.82344428868841
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  30,
+                                            "name":  "LANAI POLICE",
+                                            "island":  "Lanai"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  31,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -156.68445770111211,
+                                                              20.904658213253668
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  31,
+                                            "name":  "LAHAINA POLICE",
+                                            "island":  "Maui"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  32,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -156.44072863022939,
+                                                              20.727053233487023
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  32,
+                                            "name":  "KIHEI POLICE PIILANI HWY",
+                                            "island":  "Maui"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  33,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -155.99353604509471,
+                                                              20.763026526931359
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  33,
+                                            "name":  "HANA POLICE",
+                                            "island":  "Maui"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  34,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.94617269488253,
+                                                              21.674715505468988
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  34,
+                                            "name":  "Kahuku Substation",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  35,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -158.02526988430469,
+                                                              21.502489711457546
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  35,
+                                            "name":  "Wahiawa District Station",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  36,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -158.1874972875695,
+                                                              21.443287598932127
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  36,
+                                            "name":  "Waianae Substation",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  37,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.73987199832166,
+                                                              21.396257209568489
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  37,
+                                            "name":  "Kailua Substation",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  38,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.79875215197129,
+                                                              21.413403939845089
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  38,
+                                            "name":  "Kaneohe District Station",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  39,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.96971769387244,
+                                                              21.396209604046103
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  39,
+                                            "name":  "Pearl City District Station",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  40,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.87065032139552,
+                                                              21.344077588437159
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  40,
+                                            "name":  "Kalihi District Station",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  41,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.86279390666863,
+                                                              21.312029955903423
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  41,
+                                            "name":  "Chinatown Substation",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  42,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.82578035086823,
+                                                              21.275976478097633
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  42,
+                                            "name":  "Waikiki Substation",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  43,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -158.08136835064502,
+                                                              21.335813249463918
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  43,
+                                            "name":  "Kapolei District Station",
+                                            "island":  "Oahu"
+                                        }
+                     },
+                     {
+                         "type":  "Feature",
+                         "id":  44,
+                         "geometry":  {
+                                          "type":  "Point",
+                                          "coordinates":  [
+                                                              -157.85150725188853,
+                                                              21.303962065887639
+                                                          ]
+                                      },
+                         "properties":  {
+                                            "objectid":  44,
+                                            "name":  "Alapai Police Headquarters",
+                                            "island":  "Oahu"
+                                        }
+                     }
+                 ]
+}
