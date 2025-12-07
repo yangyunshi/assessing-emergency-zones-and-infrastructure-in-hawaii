@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import AddLocation from "./AddLocation.tsx";
+import AddLocation from "./AddLocation";
 function CheckboxPanel() {
   const [openWindow, setOpenWindow] = useState(false);
 
