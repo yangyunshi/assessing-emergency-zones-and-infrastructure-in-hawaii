@@ -11,7 +11,8 @@ function CheckboxPanel() {
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "100%"
+        height: "100%",
+        color: "black"
       }}
     >
       {/* Card with three checkboxes */}
@@ -257,6 +258,7 @@ function CheckboxPanel() {
             borderRadius: "16px",
             border: "1px solid #5c7d7a",
             backgroundColor: "#523949ff",
+            color: "#ffffff",
             fontSize: "0.85rem",
             cursor: "pointer",
             textAlign: "center"
