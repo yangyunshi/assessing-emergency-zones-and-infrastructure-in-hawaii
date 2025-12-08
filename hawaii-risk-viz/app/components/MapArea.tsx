@@ -31,7 +31,6 @@ interface GeoFeature {
   };
   geometry: {
     type: string;
-    // coordinates can be nested; keep it generic
     coordinates: unknown;
   };
 }
@@ -79,9 +78,7 @@ function MapArea({ layers }: MapAreaProps) {
           "/datasets/Annual_Rainfall_(mm).geojson"
         )) as FeatureCollection;
 
-        if (cancelled) {
-          return;
-        }
+        if (cancelled) return;
 
         // ----- Emergency Sirens -----
         const parsedSirens: SirenPoint[] = sirenRows
@@ -91,17 +88,13 @@ function MapArea({ layers }: MapAreaProps) {
             const decibelStr = row.DECIBEL ?? "";
 
             const match = loc1.match(/\(([^,]+),\s*([^)]+)\)/);
-            if (!match) {
-              return null;
-            }
+            if (!match) return null;
 
             const lat = Number(match[1]);
             const lon = Number(match[2]);
             const decibel = Number(decibelStr);
 
-            if (Number.isNaN(lat) || Number.isNaN(lon)) {
-              return null;
-            }
+            if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
 
             return {
               lat,
@@ -122,9 +115,7 @@ function MapArea({ layers }: MapAreaProps) {
             const lat = match ? Number(match[1]) : NaN;
             const lon = match ? Number(match[2]) : NaN;
 
-            if (Number.isNaN(lat) || Number.isNaN(lon)) {
-              return null;
-            }
+            if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
 
             const shelterName = row["Hurricane Shelter"] ?? "Shelter";
             const island = row.Island ?? "";
@@ -150,67 +141,28 @@ function MapArea({ layers }: MapAreaProps) {
     }
 
     void loadAll();
-
     return () => {
       cancelled = true;
     };
   }, []);
 
-    const data: Data[] = useMemo(() => {
+  const data: Data[] = useMemo(() => {
     const traces: Data[] = [];
 
-    // Base trace so the mapbox map always renders
-    const baseTrace: Data = {
+    // Anchor trace so Mapbox map always renders with our style
+    traces.push({
       type: "scattermapbox",
-      lat: [],
-      lon: [],
+      lat: [20.5],
+      lon: [-156.5],
+      marker: { size: 0.1, opacity: 0 },
       hoverinfo: "skip",
-      showlegend: false
-    };
-    traces.push(baseTrace);
+      showlegend: false,
+      name: ""
+    } as Data);
 
-    // ----- Emergency Sirens -----
-    if (layers.emergencySirens && sirens.length > 0) {
-      const sirenTrace: Data = {
-        type: "scattermapbox",
-        mode: "markers",
-        lon: sirens.map((s) => s.lon),
-        lat: sirens.map((s) => s.lat),
-        text: sirens.map((s) => s.label),
-        marker: {
-          size: 8,
-          color: sirens.map((s) => s.decibel),
-          colorscale: "Hot",
-          reversescale: true,
-          cmin: 100,
-          cmax: 130,
-          colorbar: {
-            title: { text: "Decibel Level" }
-          }
-        },
-        name: "Emergency Sirens"
-      };
-      traces.push(sirenTrace);
-    }
+    // --- Polygon layers (go first so others draw on top) ---
 
-    // ----- Hurricane Shelters -----
-    if (layers.hurricaneShelters && shelters.length > 0) {
-      const shelterTrace: Data = {
-        type: "scattermapbox",
-        mode: "markers",
-        lon: shelters.map((s) => s.lon),
-        lat: shelters.map((s) => s.lat),
-        text: shelters.map((s) => s.label),
-        marker: {
-          size: 10,
-          color: "purple"
-        },
-        name: "Hurricane Shelters"
-      };
-      traces.push(shelterTrace);
-    }
-
-    // ----- Fire Risk Zones (choropleth) -----
+    // Fire Risk Zones
     if (layers.fireRiskZones && fireRiskGeo) {
       const riskScale: Record<string, number> = {
         Low: 0,
@@ -257,7 +209,7 @@ function MapArea({ layers }: MapAreaProps) {
       traces.push(fireRiskTrace);
     }
 
-    // ----- Tsunami Zones (choropleth) -----
+    // Tsunami Zones
     if (layers.tsunamiZones && tsunamiGeo) {
       const zoneTypeScale: Record<string, number> = {
         "Tsunami Safe Zone": 0,
@@ -304,7 +256,7 @@ function MapArea({ layers }: MapAreaProps) {
       traces.push(tsunamiTrace);
     }
 
-    // ----- Lava Flow Hazard Zones (choropleth) -----
+    // Lava Flow Hazard Zones
     if (layers.lavaZones && lavaGeo) {
       const features = lavaGeo.features;
       const locations = features.map(
@@ -331,7 +283,56 @@ function MapArea({ layers }: MapAreaProps) {
       traces.push(lavaTrace);
     }
 
-    // ----- Fault Lines (mapbox lines) -----
+    // Rainfall contours (lines)
+    if (layers.rainfallContours && rainfallGeo) {
+      const bins = [
+        { min: 0, max: 1000, color: "#c6dbef", label: "0–1000 mm" },
+        { min: 1001, max: 2000, color: "#6baed6", label: "1001–2000 mm" },
+        { min: 2001, max: 3000, color: "#4292c6", label: "2001–3000 mm" },
+        { min: 3001, max: 4000, color: "#2171b5", label: "3001–4000 mm" },
+        { min: 4001, max: Infinity, color: "#08306b", label: ">4000 mm" }
+      ];
+
+      bins.forEach((bin) => {
+        const lons: (number | null)[] = [];
+        const lats: (number | null)[] = [];
+        const texts: string[] = [];
+
+        rainfallGeo.features.forEach((f) => {
+          const contour = Number(f.properties["contour"] ?? Number.NaN);
+          if (Number.isNaN(contour)) return;
+
+          if (contour >= bin.min && contour <= bin.max) {
+            const coords = f.geometry.coordinates as [number, number][];
+            coords.forEach(([lon, lat]) => {
+              lons.push(lon);
+              lats.push(lat);
+              texts.push(`Rainfall: ${contour} mm`);
+            });
+            // separate line segments
+            lons.push(null);
+            lats.push(null);
+            texts.push("");
+          }
+        });
+
+        if (lons.length > 0) {
+          const trace: Data = {
+            type: "scattermapbox",
+            mode: "lines",
+            lon: lons,
+            lat: lats,
+            line: { width: 3, color: bin.color },
+            hoverinfo: "text",
+            text: texts,
+            name: bin.label
+          };
+          traces.push(trace);
+        }
+      });
+    }
+
+    // Fault Lines (lines)
     if (layers.faultLines && faultsGeo) {
       const allLon: (number | null)[] = [];
       const allLat: (number | null)[] = [];
@@ -358,53 +359,47 @@ function MapArea({ layers }: MapAreaProps) {
       traces.push(faultTrace);
     }
 
-    // ----- Rainfall contours (mapbox lines) -----
-    if (layers.rainfallContours && rainfallGeo) {
-      const bins = [
-        { min: 0, max: 1000, color: "#c6dbef", label: "0–1000 mm" },
-        { min: 1001, max: 2000, color: "#6baed6", label: "1001–2000 mm" },
-        { min: 2001, max: 3000, color: "#4292c6", label: "2001–3000 mm" },
-        { min: 3001, max: 4000, color: "#2171b5", label: "3001–4000 mm" },
-        { min: 4001, max: Infinity, color: "#08306b", label: ">4000 mm" }
-      ];
+    // --- Point layers last so they sit on top ---
 
-      bins.forEach((bin) => {
-        const lons: (number | null)[] = [];
-        const lats: (number | null)[] = [];
-        const texts: string[] = [];
-
-        rainfallGeo.features.forEach((f) => {
-          const contour = Number(f.properties["contour"] ?? Number.NaN);
-          if (Number.isNaN(contour)) {
-            return;
+    // Emergency Sirens
+    if (layers.emergencySirens && sirens.length > 0) {
+      const sirenTrace: Data = {
+        type: "scattermapbox",
+        mode: "markers",
+        lon: sirens.map((s) => s.lon),
+        lat: sirens.map((s) => s.lat),
+        text: sirens.map((s) => s.label),
+        marker: {
+          size: 8,
+          color: sirens.map((s) => s.decibel),
+          colorscale: "Hot",
+          reversescale: true,
+          cmin: 100,
+          cmax: 130,
+          colorbar: {
+            title: { text: "Decibel Level" }
           }
-          if (contour >= bin.min && contour <= bin.max) {
-            const coords = f.geometry.coordinates as [number, number][];
-            coords.forEach(([lon, lat]) => {
-              lons.push(lon);
-              lats.push(lat);
-              texts.push(`Rainfall: ${contour} mm`);
-            });
-            lons.push(null);
-            lats.push(null);
-            texts.push("");
-          }
-        });
+        },
+        name: "Emergency Sirens"
+      };
+      traces.push(sirenTrace);
+    }
 
-        if (lons.length > 0) {
-          const trace: Data = {
-            type: "scattermapbox",
-            mode: "lines",
-            lon: lons,
-            lat: lats,
-            line: { width: 3, color: bin.color },
-            hoverinfo: "text",
-            text: texts,
-            name: bin.label
-          };
-          traces.push(trace);
-        }
-      });
+    // Hurricane Shelters
+    if (layers.hurricaneShelters && shelters.length > 0) {
+      const shelterTrace: Data = {
+        type: "scattermapbox",
+        mode: "markers",
+        lon: shelters.map((s) => s.lon),
+        lat: shelters.map((s) => s.lat),
+        text: shelters.map((s) => s.label),
+        marker: {
+          size: 10,
+          color: "purple"
+        },
+        name: "Hurricane Shelters"
+      };
+      traces.push(shelterTrace);
     }
 
     return traces;
@@ -419,19 +414,17 @@ function MapArea({ layers }: MapAreaProps) {
     rainfallGeo
   ]);
 
-
   const layout: Partial<Layout> = {
     mapbox: {
-      style: "carto-positron", // or "open-street-map"
+      style: "open-street-map", // or "carto-positron"
       center: { lat: 20.5, lon: -156.5 },
       zoom: 6
     },
     margin: { l: 0, r: 0, t: 0, b: 0 },
-    paper_bgcolor: "#ffffff",
-    plot_bgcolor: "#ffffff",
+    paper_bgcolor: "#cfe9f5", // light ocean blue
+    plot_bgcolor: "#cfe9f5",
     showlegend: true
   };
-
 
   return (
     <Plot
@@ -441,12 +434,10 @@ function MapArea({ layers }: MapAreaProps) {
       useResizeHandler
       config={{
         displayModeBar: true,
-        // Disable wheel zoom to avoid Plotly _scrollZoom runtime bug
-        scrollZoom: false
+        displaylogo: false
       }}
     />
   );
-
 }
 
 export default MapArea;
