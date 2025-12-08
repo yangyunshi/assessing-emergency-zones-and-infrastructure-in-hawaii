@@ -3,8 +3,33 @@
 
 import { useState } from "react";
 import AddLocation from "./AddLocation";
-function CheckboxPanel() {
+
+export type LayerVisibility = {
+  policeStations: boolean;
+  emergencySirens: boolean;
+  hurricaneShelters: boolean;
+  fireStations: boolean;
+  fireRiskZones: boolean;
+  lavaZones: boolean;
+  tsunamiZones: boolean;
+  rainfallContours: boolean;
+  faultLines: boolean;
+};
+
+interface CheckboxPanelProps {
+  layers: LayerVisibility;
+  onLayersChange: (next: LayerVisibility) => void;
+}
+
+function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
   const [openWindow, setOpenWindow] = useState(false);
+
+  function toggleLayer(key: keyof LayerVisibility) {
+    onLayersChange({
+      ...layers,
+      [key]: !layers[key]
+    });
+  }
 
   return (
     <div
@@ -14,8 +39,7 @@ function CheckboxPanel() {
         height: "100%"
       }}
     >
-      {/* Card with three checkboxes */}
-      {/* Card 1 */}
+      {/* Card 1: General Safety Infrastructure */}
       <section
         style={{
           backgroundColor: "#ffffff",
@@ -67,19 +91,33 @@ function CheckboxPanel() {
           }}
         >
           <label>
-            <input type="checkbox" /> Police Stations
+            <input
+              type="checkbox"
+              checked={layers.policeStations}
+              onChange={() => toggleLayer("policeStations")}
+            />{" "}
+            Police Stations
           </label>
           <label>
-            <input type="checkbox" /> Emergency Sirens
+            <input
+              type="checkbox"
+              checked={layers.emergencySirens}
+              onChange={() => toggleLayer("emergencySirens")}
+            />{" "}
+            Emergency Sirens
           </label>
           <label>
-            <input type="checkbox" /> Hurricane Shelters
+            <input
+              type="checkbox"
+              checked={layers.hurricaneShelters}
+              onChange={() => toggleLayer("hurricaneShelters")}
+            />{" "}
+            Hurricane Shelters
           </label>
         </div>
       </section>
 
-      {/* Card with three checkboxes */}
-      {/* Card 2 */}
+      {/* Card 2: Fire Disasters */}
       <section
         style={{
           backgroundColor: "#ffffff",
@@ -131,19 +169,33 @@ function CheckboxPanel() {
           }}
         >
           <label>
-            <input type="checkbox" /> Fire Stations
+            <input
+              type="checkbox"
+              checked={layers.fireStations}
+              onChange={() => toggleLayer("fireStations")}
+            />{" "}
+            Fire Stations
           </label>
           <label>
-            <input type="checkbox" /> Fire Risk Zones
+            <input
+              type="checkbox"
+              checked={layers.fireRiskZones}
+              onChange={() => toggleLayer("fireRiskZones")}
+            />{" "}
+            Fire Risk Zones
           </label>
           <label>
-            <input type="checkbox" /> Lava Flow Zones
+            <input
+              type="checkbox"
+              checked={layers.lavaZones}
+              onChange={() => toggleLayer("lavaZones")}
+            />{" "}
+            Lava Flow Zones
           </label>
         </div>
       </section>
 
-      {/* Card with three checkboxes */}
-      {/* Card 3 */}
+      {/* Card 3: Tsunami / Flooding */}
       <section
         style={{
           backgroundColor: "#ffffff",
@@ -195,13 +247,28 @@ function CheckboxPanel() {
           }}
         >
           <label>
-            <input type="checkbox" /> Tsunami Risk Zones
+            <input
+              type="checkbox"
+              checked={layers.tsunamiZones}
+              onChange={() => toggleLayer("tsunamiZones")}
+            />{" "}
+            Tsunami Risk Zones
           </label>
           <label>
-            <input type="checkbox" /> Rainfall (mm)
+            <input
+              type="checkbox"
+              checked={layers.rainfallContours}
+              onChange={() => toggleLayer("rainfallContours")}
+            />{" "}
+            Rainfall (mm)
           </label>
           <label>
-            <input type="checkbox" /> Earthquake Fault Lines
+            <input
+              type="checkbox"
+              checked={layers.faultLines}
+              onChange={() => toggleLayer("faultLines")}
+            />{" "}
+            Earthquake Fault Lines
           </label>
         </div>
       </section>
@@ -233,21 +300,7 @@ function CheckboxPanel() {
           Add Location
         </button>
 
-        <button
-          type="button"
-          style={{
-            padding: "10px 16px",
-            borderRadius: "18px",
-            border: "none",
-            backgroundColor: "#4b8b3b",
-            color: "#ffffff",
-            fontWeight: 600,
-            fontSize: "0.95rem",
-            cursor: "pointer"
-          }}
-        >
-          Update Map
-        </button>
+        {/* Update Map button removed */}
 
         <button
           type="button"
@@ -259,7 +312,8 @@ function CheckboxPanel() {
             backgroundColor: "#523949ff",
             fontSize: "0.85rem",
             cursor: "pointer",
-            textAlign: "center"
+            textAlign: "center",
+            color: "#ffffff"
           }}
         >
           Download Selected Data Sets
