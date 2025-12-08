@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import * as d3 from "d3";
 import type { Data, Layout } from "plotly.js";
-import Plot from "./PlotlyMap";
+import Plot from "react-plotly.js";
 import type { LayerVisibility } from "./CheckboxPanel";
 
 interface MapAreaProps {
@@ -370,20 +370,16 @@ function MapArea({ layers }: MapAreaProps) {
         lat: sirens.map((s) => s.lat),
         text: sirens.map((s) => s.label),
         marker: {
-          size: 8,
-          color: sirens.map((s) => s.decibel),
-          colorscale: "Hot",
-          reversescale: true,
-          cmin: 100,
-          cmax: 130,
-          colorbar: {
-            title: { text: "Decibel Level" }
-          }
+          size: 10,
+          color: "gray",
         },
-        name: "Emergency Sirens"
+        hoverinfo: "text",
+        name: "Emergency Sirens",
+        showlegend: false
       };
       traces.push(sirenTrace);
     }
+
 
     // Hurricane Shelters
     if (layers.hurricaneShelters && shelters.length > 0) {
@@ -397,7 +393,9 @@ function MapArea({ layers }: MapAreaProps) {
           size: 10,
           color: "purple"
         },
-        name: "Hurricane Shelters"
+        name: "Hurricane Shelters",
+        showlegend: false
+
       };
       traces.push(shelterTrace);
     }
