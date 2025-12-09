@@ -21,6 +21,77 @@ interface CheckboxPanelProps {
   onLayersChange: (next: LayerVisibility) => void;
 }
 
+const LAYER_DATASETS: Record<keyof LayerVisibility, string[]> = {
+  policeStations: [
+    // "Police_Stations_(Statewide).csv"
+  ],
+  emergencySirens: ["Emergency-Sirens.csv"],
+  hurricaneShelters: ["state-civil-defense-hurricane-shelters-csv.csv"],
+  fireStations: [
+    // "Fire_Stations_(Statewide).csv"
+  ],
+  fireRiskZones: ["Fire-Risk-Areas.geojson"],
+  lavaZones: ["Volcano_Lava_Flow_Hazard_Zones.geojson"],
+  tsunamiZones: ["Tsunami-Evacuation-All-Zones.geojson"],
+  rainfallContours: ["Annual_Rainfall_(mm).geojson"],
+  faultLines: ["Faults.geojson"]
+};
+
+async function downloadSelectedDatasets(layers: LayerVisibility) {
+  // Lazy-load so it only runs in the browser
+  const JSZipModule = await import("jszip");
+  const JSZip = JSZipModule.default;
+  const zip = new JSZip();
+
+  const filesToDownload: { url: string; name: string }[] = [];
+
+  (Object.entries(LAYER_DATASETS) as [keyof LayerVisibility, string[]][])
+    .forEach(([layerKey, files]) => {
+      if (!layers[layerKey]) return;
+      files.forEach((filename) => {
+        filesToDownload.push({
+          url: `/datasets/${filename}`,
+          name: filename
+        });
+      });
+    });
+
+  if (filesToDownload.length === 0) {
+    window.alert("No datasets selected. Please check at least one layer.");
+    return;
+  }
+
+  for (const file of filesToDownload) {
+    try {
+      const res = await fetch(file.url);
+      if (!res.ok) {
+        // Skip missing files but don’t crash
+        // eslint-disable-next-line no-console
+        console.warn("Failed to fetch dataset:", file.url);
+        continue;
+      }
+      const blob = await res.blob();
+      zip.file(file.name, blob);
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error("Error fetching dataset:", file.url, err);
+    }
+  }
+
+  const zipBlob = await zip.generateAsync({ type: "blob" });
+  const url = URL.createObjectURL(zipBlob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "hawaii-datasets.zip";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  URL.revokeObjectURL(url);
+}
+
+
 function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
   const [openWindow, setOpenWindow] = useState(false);
 
@@ -31,13 +102,19 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
     });
   }
 
+  async function handleDownloadClick() {
+    await downloadSelectedDatasets(layers);
+  }
+
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        color: "black"
+        color: "black",
+        paddingBottom: "12px",
+        boxSizing: "border-box"
       }}
     >
       {/* Card 1: General Safety Infrastructure */}
@@ -255,23 +332,25 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
         >
           Add Location
         </button>
-        
+
         <button
           type="button"
+          onClick={handleDownloadClick}
           style={{
             marginTop: "4px",
             padding: "8px 10px",
             borderRadius: "16px",
             border: "1px solid #5c7d7a",
             backgroundColor: "#523949ff",
-            color: "#ffffff",
             fontSize: "0.85rem",
             cursor: "pointer",
             textAlign: "center",
+            color: "#ffffff"
           }}
         >
           Download Selected Data Sets
         </button>
+
       </div>
 
       <AddLocation open={openWindow} onClose={() => setOpenWindow(false)} />

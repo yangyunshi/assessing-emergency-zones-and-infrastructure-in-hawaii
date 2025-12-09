@@ -42,7 +42,8 @@ export default function HomePage() {
           style={{
             fontSize: "0.95rem",
             fontWeight: 600,
-            marginBottom: "8px"
+            marginBottom: "8px",
+            color: "black",
           }}
         >
           Assessing Natural Disaster Risk in Hawaiʻi
