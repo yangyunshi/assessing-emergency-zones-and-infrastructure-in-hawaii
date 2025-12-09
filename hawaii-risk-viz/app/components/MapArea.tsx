@@ -1,10 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import dynamic from "next/dynamic";
 import * as d3 from "d3";
 import type { Data, Layout } from "plotly.js";
-import Plot from "react-plotly.js";
 import type { LayerVisibility } from "./CheckboxPanel";
+
+const Plot = dynamic(() => import("react-plotly.js"), {
+  ssr: false
+});
 
 interface MapAreaProps {
   layers: LayerVisibility;
@@ -414,7 +418,7 @@ function MapArea({ layers }: MapAreaProps) {
 
   const layout: Partial<Layout> = {
     mapbox: {
-      style: "open-street-map", // or "carto-positron"
+      style: "carto-positron", // or "carto-positron" open-street-ma
       center: { lat: 20.5, lon: -156.5 },
       zoom: 6
     },
