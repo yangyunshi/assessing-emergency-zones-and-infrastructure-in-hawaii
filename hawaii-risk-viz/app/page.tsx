@@ -1,66 +1,70 @@
-import CheckboxPanel from "./components/CheckboxPanel";
+"use client";
+
+import { useState } from "react";
 import MapArea from "./components/MapArea";
+import CheckboxPanel, {
+  LayerVisibility
+} from "./components/CheckboxPanel";
+
+const initialLayers: LayerVisibility = {
+  policeStations: false,
+  emergencySirens: true,
+  hurricaneShelters: false,
+  fireStations: false,
+  fireRiskZones: false,
+  lavaZones: false,
+  tsunamiZones: false,
+  rainfallContours: false,
+  faultLines: false
+};
 
 export default function HomePage() {
+  const [layers, setLayers] = useState<LayerVisibility>(initialLayers);
+
   return (
     <main
       style={{
-        minHeight: "100vh",
         display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#d6d6d6"
+        height: "100vh",
+        backgroundColor: "#e5e7eb"
       }}
     >
-      <header
+      <aside
         style={{
-          height: "40px",
-          backgroundColor: "#3b1515",
-          color: "#ffffff",
-          display: "flex",
-          alignItems: "center",
-          padding: "0 16px",
-          fontSize: "0.95rem",
-          fontWeight: 500
+          width: "240px",
+          padding: "12px",
+          backgroundColor: "#f3f4f6",
+          boxShadow: "0 0 4px rgba(0,0,0,0.2)",
+          boxSizing: "border-box"
         }}
       >
-        Assessing Natural Disaster Risk in Hawaiʻi
-      </header>
+        <h1
+          style={{
+            fontSize: "0.95rem",
+            fontWeight: 600,
+            marginBottom: "8px"
+          }}
+        >
+          Assessing Natural Disaster Risk in Hawaiʻi
+        </h1>
+        <CheckboxPanel layers={layers} onLayersChange={setLayers} />
+      </aside>
 
       <section
         style={{
           flexGrow: 1,
-          display: "flex",
-          padding: "16px",
+          padding: "0",
           boxSizing: "border-box"
         }}
       >
-        <aside
+        <div
           style={{
-            width: "260px",
-            backgroundColor: "#e4e4e4",
-            borderRadius: "4px",
-            padding: "12px",
-            boxSizing: "border-box",
-            boxShadow: "0 1px 4px rgba(0,0,0,0.1)",
-            marginRight: "12px"
+            width: "100%",
+            height: "100%"
           }}
         >
-          <CheckboxPanel />
-        </aside>
-
-        {/* Map area: MapArea fills this completely */}
-        <section
-          style={{
-            flexGrow: 1,
-            display: "flex",
-            backgroundColor: "#ffffff",
-            borderRadius: "4px",
-            overflow: "hidden",
-            boxShadow: "0 1px 4px rgba(0,0,0,0.1)"
-          }}
-        >
-          <MapArea />
-        </section>
+          <MapArea layers={layers} />
+        </div>
       </section>
     </main>
   );
