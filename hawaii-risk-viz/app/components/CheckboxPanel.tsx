@@ -66,21 +66,6 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
           >
             General Safety Infrastructure
           </span>
-          <button
-            type="button"
-            aria-label="Help"
-            style={{
-              width: "20px",
-              height: "20px",
-              borderRadius: "50%",
-              border: "none",
-              backgroundColor: "#e0e0e0",
-              fontSize: "0.8rem",
-              cursor: "default"
-            }}
-          >
-            ?
-          </button>
         </header>
 
         <div
@@ -144,21 +129,6 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
           >
             Fire Disasters
           </span>
-          <button
-            type="button"
-            aria-label="Help"
-            style={{
-              width: "20px",
-              height: "20px",
-              borderRadius: "50%",
-              border: "none",
-              backgroundColor: "#e0e0e0",
-              fontSize: "0.8rem",
-              cursor: "default"
-            }}
-          >
-            ?
-          </button>
         </header>
 
         <div
@@ -222,21 +192,6 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
           >
             Tsunami and Flooding Disasters
           </span>
-          <button
-            type="button"
-            aria-label="Help"
-            style={{
-              width: "20px",
-              height: "20px",
-              borderRadius: "50%",
-              border: "none",
-              backgroundColor: "#e0e0e0",
-              fontSize: "0.8rem",
-              cursor: "default"
-            }}
-          >
-            ?
-          </button>
         </header>
 
         <div
@@ -300,9 +255,7 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
         >
           Add Location
         </button>
-
-        {/* Update Map button removed */}
-
+        
         <button
           type="button"
           style={{
@@ -315,7 +268,6 @@ function CheckboxPanel({ layers, onLayersChange }: CheckboxPanelProps) {
             fontSize: "0.85rem",
             cursor: "pointer",
             textAlign: "center",
-            color: "#ffffff"
           }}
         >
           Download Selected Data Sets
