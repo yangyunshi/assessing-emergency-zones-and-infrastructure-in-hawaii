@@ -47,7 +47,8 @@ function MapArea({ newPoint }: MapAreaProps) {
       lat: [21.3069],
       mode: "markers",
       marker: { size: 8 },
-      name: "Honolulu"
+      name: "Honolulu",
+      showlegend: false
     },
     ...(newPoint
       ? [
