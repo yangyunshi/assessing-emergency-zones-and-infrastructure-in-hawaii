@@ -3,6 +3,8 @@
 import { useState } from "react";
 import CheckboxPanel from "./components/CheckboxPanel";
 import MapArea from "./components/MapArea";
+import AboutPage from "./about";
+
 
 export default function HomePage() {
   const [addedLocation, setAddedLocation] = useState<{
@@ -10,7 +12,7 @@ export default function HomePage() {
     lon: number;
     radius?: number | null;
   } | null>(null);
-
+  const [aboutOpen, setAboutOpen] = useState(false);
   return (
     <main
       style={{
@@ -27,12 +29,29 @@ export default function HomePage() {
           color: "#ffffff",
           display: "flex",
           alignItems: "center",
+          justifyContent: "space-between",
           padding: "0 16px",
           fontSize: "0.95rem",
           fontWeight: 500
         }}
       >
         Assessing Natural Disaster Risk in Hawaiʻi
+
+        <button
+          onClick={() => setAboutOpen(true)}
+          style={{
+            backgroundColor: "#ffffff",
+            color: "#3b1515",
+            padding: "4px 10px",
+            borderRadius: "6px",
+            border: "none",
+            fontWeight: 500,
+            fontSize: "0.85rem",
+            cursor: "pointer"
+          }}
+        >
+          About
+        </button>
       </header>
 
       <section
@@ -75,6 +94,7 @@ export default function HomePage() {
           <MapArea newPoint={addedLocation || undefined} />
         </section>
       </section>
+      <AboutPage open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </main>
   );
 }
