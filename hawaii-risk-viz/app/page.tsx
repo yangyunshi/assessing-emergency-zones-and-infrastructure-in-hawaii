@@ -1,7 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import CheckboxPanel from "./components/CheckboxPanel";
 import MapArea from "./components/MapArea";
 
 export default function HomePage() {
+  const [addedLocation, setAddedLocation] = useState<{
+    lat: number;
+    lon: number;
+    radius?: number | null;
+  } | null>(null);
+
   return (
     <main
       style={{
@@ -45,7 +54,11 @@ export default function HomePage() {
             marginRight: "12px"
           }}
         >
-          <CheckboxPanel />
+          <CheckboxPanel
+            onAddLocation={(lat, lon, radius) => {
+              setAddedLocation({ lat, lon, radius });
+            }}
+          />
         </aside>
 
         {/* Map area: MapArea fills this completely */}
@@ -59,7 +72,7 @@ export default function HomePage() {
             boxShadow: "0 1px 4px rgba(0,0,0,0.1)"
           }}
         >
-          <MapArea />
+          <MapArea newPoint={addedLocation || undefined} />
         </section>
       </section>
     </main>

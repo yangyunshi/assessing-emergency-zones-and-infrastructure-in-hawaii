@@ -4,11 +4,15 @@ import { useState } from "react";
 type Props = {
   open: boolean;
   onClose: () => void;
+  onSave: (lat: number, lon: number, radius: number | null) => void; // updated
 };
 
-function AddLocation({ open, onClose }: Props) {
+function AddLocation({ open, onClose, onSave }: Props) {
   const [selectedDistance, setSelectedDistance] = useState<number | null>(null);
-  if (!open) return null; // do not render when closed
+  const [latitude, setLatitude] = useState<number | "">("");
+  const [longitude, setLongitude] = useState<number | "">("");
+
+  if (!open) return null;
 
   return (
     <div
@@ -26,7 +30,6 @@ function AddLocation({ open, onClose }: Props) {
       }}
       onClick={onClose}
     >
-      {/* Modal content box */}
       <div
         style={{
           width: "600px",
@@ -36,20 +39,24 @@ function AddLocation({ open, onClose }: Props) {
           borderRadius: "12px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.25)"
         }}
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+        onClick={(e) => e.stopPropagation()}
       >
         <h3 style={{
           marginTop: 0,
           marginBottom: "16px",
           fontSize: "1.1rem",
           fontWeight: 600
-        }}>Add a Location</h3>
+        }}>
+          Add a Location
+        </h3>
 
         <label style={{display: "block", marginBottom: "14px"}}>
           Latitude:
           <input
             type="number"
             step="0.000001"
+            value={latitude}
+            onChange={(e) => setLatitude(Number(e.target.value))}
             placeholder="e.g., 21.3069"
             style={{
               width: "100%",
@@ -67,6 +74,8 @@ function AddLocation({ open, onClose }: Props) {
           <input
             type="number"
             step="0.000001"
+            value={longitude}
+            onChange={(e) => setLongitude(Number(e.target.value))}
             placeholder="e.g., -157.8583"
             style={{
               width: "100%",
@@ -134,6 +143,15 @@ function AddLocation({ open, onClose }: Props) {
           </button>
 
           <button
+            onClick={() => {
+              if (latitude !== "" && longitude !== "") {
+                onSave(latitude, longitude, selectedDistance);
+                setLatitude("");
+                setLongitude("");
+                setSelectedDistance(null);
+                onClose();
+              }
+            }}
             style={{
               padding: "6px 12px",
               borderRadius: "8px",

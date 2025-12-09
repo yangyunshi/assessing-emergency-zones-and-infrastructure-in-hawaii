@@ -3,7 +3,12 @@
 
 import { useState } from "react";
 import AddLocation from "./AddLocation";
-function CheckboxPanel() {
+
+type Props = {
+  onAddLocation?: (lat: number, lon: number, radiusMiles: number | null) => void; // NEW: radius included
+};
+
+function CheckboxPanel({ onAddLocation }: Props) {
   const [openWindow, setOpenWindow] = useState(false);
 
   return (
@@ -268,7 +273,11 @@ function CheckboxPanel() {
         </button>
       </div>
 
-      <AddLocation open={openWindow} onClose={() => setOpenWindow(false)} />
+      <AddLocation
+        open={openWindow}
+        onClose={() => setOpenWindow(false)}
+        onSave={(lat, lon, radius) => onAddLocation?.(lat, lon, radius)} // NEW: forward radius
+      />
     </div>
   );
 }
