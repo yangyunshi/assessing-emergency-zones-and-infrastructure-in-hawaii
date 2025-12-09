@@ -56,7 +56,8 @@ function AddLocation({ open, onClose, onSave }: Props) {
             type="number"
             step="0.000001"
             value={latitude}
-            onChange={(e) => setLatitude(Number(e.target.value))}
+            onChange={(e) =>
+              e.target.value === "" ? setLatitude("") : setLatitude(Number(e.target.value))}
             placeholder="e.g., 21.3069"
             style={{
               width: "100%",
@@ -75,7 +76,8 @@ function AddLocation({ open, onClose, onSave }: Props) {
             type="number"
             step="0.000001"
             value={longitude}
-            onChange={(e) => setLongitude(Number(e.target.value))}
+            onChange={(e) =>
+              e.target.value === "" ? setLongitude("") : setLongitude(Number(e.target.value))}
             placeholder="e.g., -157.8583"
             style={{
               width: "100%",
