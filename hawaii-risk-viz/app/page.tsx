@@ -3,6 +3,7 @@
 import { useState } from "react";
 import MapArea from "./components/MapArea";
 import CheckboxPanel, { LayerVisibility } from "./components/CheckboxPanel";
+import AboutPage from "./about";
 
 type UserLocation = {
   id: string;
@@ -26,6 +27,7 @@ const initialLayers: LayerVisibility = {
 export default function HomePage() {
   const [layers, setLayers] = useState<LayerVisibility>(initialLayers);
   const [userLocations, setUserLocations] = useState<UserLocation[]>([]);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   function handleAddUserLocation(loc: {
     lat: number;
@@ -60,16 +62,43 @@ export default function HomePage() {
           overflowY: "auto"
         }}
       >
-        <h1
+
+        <div
           style={{
-            marginTop: 0,
-            marginBottom: "12px",
-            fontSize: "1.1rem",
-            fontWeight: 700
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "12px"
           }}
         >
-          Risk in Hawaiʻi
-        </h1>
+          <h1
+            style={{
+              marginTop: 0,
+              marginBottom: "12px",
+              fontSize: "1.1rem",
+              fontWeight: 700,
+              color: "black"
+            }}
+          >
+            Risk in Hawaiʻi
+          </h1>
+
+          <button
+            onClick={() => setAboutOpen(true)}
+            style={{
+              padding: "6px 10px",
+              borderRadius: "8px",
+              backgroundColor: "#3b1515",
+              color: "white",
+              border: "none",
+              cursor: "pointer",
+              fontSize: "0.85rem",
+              fontWeight: 600
+            }}
+          >
+            About
+          </button>
+        </div>
 
         <CheckboxPanel
           layers={layers}
@@ -87,6 +116,7 @@ export default function HomePage() {
       >
         <MapArea layers={layers} userLocations={userLocations} />
       </section>
+      <AboutPage open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </main>
   );
 }
