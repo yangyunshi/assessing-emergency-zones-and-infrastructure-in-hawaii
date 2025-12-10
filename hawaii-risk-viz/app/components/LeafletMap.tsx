@@ -174,6 +174,8 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
   const [hoverTsunamiType, setHoverTsunamiType] = useState<string | null>(null);
   const [selectedLavaZone, setSelectedLavaZone] = useState<number | null>(null);
   const [hoverLavaZone, setHoverLavaZone] = useState<number | null>(null);
+  const [hoverRainContour, setHoverRainContour] = useState<number | null>(null);
+
 
 
   const fireStationPoints = useMemo<SimplePoint[]>(() => {
