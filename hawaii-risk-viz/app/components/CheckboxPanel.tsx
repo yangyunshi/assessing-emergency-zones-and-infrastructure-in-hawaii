@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AddLocation from "./AddLocation";
+import * as d3 from "d3";
 
 export type LayerVisibility = {
   policeStations: boolean;
@@ -20,6 +21,11 @@ type UserLocation = {
   lat: number;
   lon: number;
   radiusMiles: number;
+};
+
+type SimplePoint = {
+  lat: number;
+  lon: number;
 };
 
 interface CheckboxPanelProps {
@@ -50,6 +56,43 @@ const LAYER_DATASETS: Record<keyof LayerVisibility, string[]> = {
   rainfallContours: ["Annual_Rainfall_(mm).geojson"],
   faultLines: ["Faults.geojson"]
 };
+
+// Haversine distance in meters between two lat/lon points
+function distanceMeters(a: SimplePoint, b: SimplePoint): number {
+  const R = 6371000; // Earth radius in meters
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+
+  const dLat = toRad(b.lat - a.lat);
+  const dLon = toRad(b.lon - a.lon);
+  const lat1 = toRad(a.lat);
+  const lat2 = toRad(b.lat);
+
+  const sinDLat = Math.sin(dLat / 2);
+  const sinDLon = Math.sin(dLon / 2);
+
+  const h =
+    sinDLat * sinDLat +
+    Math.cos(lat1) * Math.cos(lat2) * sinDLon * sinDLon;
+
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+
+function countPointsWithinRadius(
+  centerLat: number,
+  centerLon: number,
+  radiusMeters: number,
+  points: SimplePoint[]
+): number {
+  const center: SimplePoint = { lat: centerLat, lon: centerLon };
+  let count = 0;
+
+  for (const p of points) {
+    const d = distanceMeters(center, p);
+    if (d <= radiusMeters) count += 1;
+  }
+
+  return count;
+}
 
 async function downloadSelectedDatasets(layers: LayerVisibility) {
   // Lazy-load so it only runs in the browser
@@ -115,6 +158,100 @@ function CheckboxPanel({
   onRemoveUserLocation
 }: CheckboxPanelProps) {
   const [openWindow, setOpenWindow] = useState(false);
+
+  // Points for quick distance checks
+  const [sirenPoints, setSirenPoints] = useState<SimplePoint[]>([]);
+  const [shelterPoints, setShelterPoints] = useState<SimplePoint[]>([]);
+  const [fireStationPoints, setFireStationPoints] = useState<SimplePoint[]>([]);
+  const [policeStationPoints, setPoliceStationPoints] = useState<SimplePoint[]>(
+    []
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadPoints() {
+      try {
+        // Sirens (CSV)
+        const sirenRows: d3.DSVRowArray<string> = await d3.csv(
+          "/datasets/Emergency-Sirens.csv"
+        );
+        if (!cancelled) {
+          const parsed: SimplePoint[] = sirenRows
+            .map((row) => {
+              const loc1 = row["Location 1"] ?? "";
+              const match = loc1.match(/\(([^,]+),\s*([^)]+)\)/);
+              if (!match) return null;
+              const lat = Number(match[1]);
+              const lon = Number(match[2]);
+              if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
+              return { lat, lon };
+            })
+            .filter((p): p is SimplePoint => p !== null);
+          setSirenPoints(parsed);
+        }
+
+        // Shelters (CSV)
+        const shelterRows: d3.DSVRowArray<string> = await d3.csv(
+          "/datasets/state-civil-defense-hurricane-shelters-csv.csv"
+        );
+        if (!cancelled) {
+          const parsedShelters: SimplePoint[] = shelterRows
+            .map((row) => {
+              const loc = row.Location ?? "";
+              const match = loc.match(/\(([-0-9.]+),\s*([-0-9.]+)\)/);
+              if (!match) return null;
+              const lat = Number(match[1]);
+              const lon = Number(match[2]);
+              if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
+              return { lat, lon };
+            })
+            .filter((p): p is SimplePoint => p !== null);
+          setShelterPoints(parsedShelters);
+        }
+
+        // Fire stations (GeoJSON)
+        const fireJson: any = await d3.json(
+          "/datasets/hawaii_fire_stations.geojson"
+        );
+        if (!cancelled && fireJson?.features) {
+          const pts: SimplePoint[] = fireJson.features
+            .map((f: any) => {
+              if (!f.geometry || f.geometry.type !== "Point") return null;
+              const [lon, lat] = f.geometry.coordinates as [number, number];
+              if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
+              return { lat, lon };
+            })
+            .filter((p: SimplePoint | null): p is SimplePoint => p !== null);
+          setFireStationPoints(pts);
+        }
+
+        // Police stations (GeoJSON)
+        const policeJson: any = await d3.json(
+          "/datasets/hawaii_police_stations.geojson"
+        );
+        if (!cancelled && policeJson?.features) {
+          const pts: SimplePoint[] = policeJson.features
+            .map((f: any) => {
+              if (!f.geometry || f.geometry.type !== "Point") return null;
+              const [lon, lat] = f.geometry.coordinates as [number, number];
+              if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
+              return { lat, lon };
+            })
+            .filter((p: SimplePoint | null): p is SimplePoint => p !== null);
+          setPoliceStationPoints(pts);
+        }
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.error("Error loading point datasets for panel", error);
+      }
+    }
+
+    void loadPoints();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   function toggleLayer(key: keyof LayerVisibility) {
     onLayersChange({
@@ -367,36 +504,83 @@ function CheckboxPanel({
               fontSize: "0.85rem"
             }}
           >
-            {userLocations.map((loc) => (
-              <li
-                key={loc.id}
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  gap: "6px"
-                }}
-              >
-                <span>
-                  Lat {loc.lat.toFixed(4)}, Lon {loc.lon.toFixed(4)} ·{" "}
-                  {loc.radiusMiles} mi radius
-                </span>
-                <button
-                  type="button"
-                  onClick={() => onRemoveUserLocation?.(loc.id)}
+            {userLocations.map((loc) => {
+              const radiusMeters = loc.radiusMiles * 1609.34;
+
+              const nearbyFire = countPointsWithinRadius(
+                loc.lat,
+                loc.lon,
+                radiusMeters,
+                fireStationPoints
+              );
+              const nearbyPolice = countPointsWithinRadius(
+                loc.lat,
+                loc.lon,
+                radiusMeters,
+                policeStationPoints
+              );
+              const nearbyShelters = countPointsWithinRadius(
+                loc.lat,
+                loc.lon,
+                radiusMeters,
+                shelterPoints
+              );
+              const nearbySirens = countPointsWithinRadius(
+                loc.lat,
+                loc.lon,
+                radiusMeters,
+                sirenPoints
+              );
+
+              return (
+                <li
+                  key={loc.id}
                   style={{
-                    padding: "4px 8px",
-                    borderRadius: "8px",
-                    border: "1px solid #b91c1c",
-                    backgroundColor: "#fee2e2",
-                    cursor: "pointer",
-                    fontSize: "0.8rem"
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "2px"
                   }}
                 >
-                  Remove
-                </button>
-              </li>
-            ))}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      gap: "6px"
+                    }}
+                  >
+                    <span>
+                      Lat {loc.lat.toFixed(4)}, Lon {loc.lon.toFixed(4)} ·{" "}
+                      {loc.radiusMiles} mi radius
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => onRemoveUserLocation?.(loc.id)}
+                      style={{
+                        padding: "4px 8px",
+                        borderRadius: "8px",
+                        border: "1px solid #b91c1c",
+                        backgroundColor: "#fee2e2",
+                        cursor: "pointer",
+                        fontSize: "0.8rem"
+                      }}
+                    >
+                      Remove
+                    </button>
+                  </div>
+
+                  <div
+                    style={{
+                      fontSize: "0.8rem",
+                      color: "#374151"
+                    }}
+                  >
+                    {nearbyFire} fire stations, {nearbyPolice} police stations,{" "}
+                    {nearbyShelters} shelters, {nearbySirens} sirens in radius
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}
@@ -418,7 +602,7 @@ function CheckboxPanel({
           style={{
             padding: "8px 10px",
             borderRadius: "16px",
-            border: "1px solid #888",
+            border: "1px solid",
             backgroundColor: "#3ac2a0ff",
             fontSize: "0.9rem",
             cursor: "pointer",
@@ -435,7 +619,7 @@ function CheckboxPanel({
             marginTop: "4px",
             padding: "8px 10px",
             borderRadius: "16px",
-            border: "1px solid #5c7d7a",
+            border: "1px solid ",
             backgroundColor: "#523949ff",
             fontSize: "0.85rem",
             cursor: "pointer",
