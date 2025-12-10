@@ -1,17 +1,59 @@
-// app/components/LeafletMap.tsx
 "use client";
 
 import { useEffect, useState } from "react";
 import {
   MapContainer,
   TileLayer,
-  CircleMarker,
   Popup,
   GeoJSON,
+  Marker
 } from "react-leaflet";
-import type { PathOptions } from "leaflet";
+import L, { PathOptions, DivIcon } from "leaflet";
 import * as d3 from "d3";
 import type { LayerVisibility } from "./CheckboxPanel";
+
+// --- Small helper to build SVG-based Leaflet icons ---
+function createSvgIcon(svg: string): DivIcon {
+  return L.divIcon({
+    className: "", // no default Leaflet icon styles
+    html: svg,
+    iconSize: [28, 28],
+    iconAnchor: [14, 24], // bottom-center
+    popupAnchor: [0, -24]
+  });
+}
+
+// Single-color icons for each point layer
+const policeIcon = createSvgIcon(`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <rect x="4" y="14" width="16" height="3" rx="1.5" fill="#1d4ed8" />
+    <polygon points="6,9 12,6 18,9 16,14 8,14" fill="#1d4ed8" />
+  </svg>
+`);
+
+const sirenIcon = createSvgIcon(`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Speaker body -->
+    <rect x="7" y="8" width="4" height="8" rx="1" fill="#6b7280" />
+    <!-- Speaker cone -->
+    <polygon points="11,9 15,11 15,13 11,15" fill="#6b7280" />
+    <!-- Sound waves -->
+    <path d="M16 10.5 Q17.5 12 16 13.5" fill="none" stroke="#6b7280" stroke-width="1.3" />
+  </svg>
+`);
+
+
+const shelterIcon = createSvgIcon(`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <polygon points="4,11 12,4 20,11 20,20 4,20" fill="#16a34a" />
+  </svg>
+`);
+
+const fireStationIcon = createSvgIcon(`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M12 3 L15 4.5 L18 4 V11 C18 14.5 15.8 17 12 19 8.2 17 6 14.5 6 11 V4 L9 4.5 Z" fill="#ea580c" />
+  </svg>
+`);
 
 interface LeafletMapProps {
   layers: LayerVisibility;
@@ -55,6 +97,8 @@ function LeafletMap({ layers }: LeafletMapProps) {
   const [lavaGeo, setLavaGeo] = useState<FeatureCollection | null>(null);
   const [faultsGeo, setFaultsGeo] = useState<FeatureCollection | null>(null);
   const [rainfallGeo, setRainfallGeo] = useState<FeatureCollection | null>(null);
+  const [fireStationsGeo, setFireStationsGeo] = useState<FeatureCollection | null>(null);
+  const [policeStationsGeo, setPoliceStationsGeo] = useState<FeatureCollection | null>(null);
 
   // Load datasets once
   useEffect(() => {
@@ -85,6 +129,13 @@ function LeafletMap({ layers }: LeafletMapProps) {
           "/datasets/Annual_Rainfall_(mm).geojson"
         )) as FeatureCollection;
 
+        const fireStationsJson = (await d3.json(
+          "/datasets/hawaii_fire_stations.geojson"
+        )) as FeatureCollection;
+        const policeStationsJson = (await d3.json(
+          "/datasets/hawaii_police_stations.geojson"
+        )) as FeatureCollection;
+
         if (cancelled) return;
 
         // ----- Emergency Sirens -----
@@ -107,7 +158,7 @@ function LeafletMap({ layers }: LeafletMapProps) {
               lat,
               lon,
               label: `${location} (${decibelStr} dB)`,
-              decibel,
+              decibel
             };
           })
           .filter((siren): siren is SirenPoint => siren !== null);
@@ -129,7 +180,7 @@ function LeafletMap({ layers }: LeafletMapProps) {
             return {
               lat,
               lon,
-              label: `${shelterName} (${island})`,
+              label: `${shelterName} (${island})`
             };
           })
           .filter((shelter): shelter is ShelterPoint => shelter !== null);
@@ -141,6 +192,8 @@ function LeafletMap({ layers }: LeafletMapProps) {
         setLavaGeo(lavaJson);
         setFaultsGeo(faultsJson);
         setRainfallGeo(rainfallJson);
+        setFireStationsGeo(fireStationsJson);
+        setPoliceStationsGeo(policeStationsJson);
       } catch (error) {
         // eslint-disable-next-line no-console
         console.error("Error loading map datasets", error);
@@ -166,7 +219,7 @@ function LeafletMap({ layers }: LeafletMapProps) {
       color: fillColor,
       weight: 0.5,
       fillColor,
-      fillOpacity: 0.5,
+      fillOpacity: 0.5
     };
   };
 
@@ -180,7 +233,7 @@ function LeafletMap({ layers }: LeafletMapProps) {
       color: fillColor,
       weight: 0.5,
       fillColor,
-      fillOpacity: 0.5,
+      fillOpacity: 0.5
     };
   };
 
@@ -197,7 +250,7 @@ function LeafletMap({ layers }: LeafletMapProps) {
       color: fillColor,
       weight: 0.5,
       fillColor,
-      fillOpacity: 0.5,
+      fillOpacity: 0.5
     };
   };
 
@@ -214,13 +267,13 @@ function LeafletMap({ layers }: LeafletMapProps) {
     }
     return {
       color,
-      weight: 2,
+      weight: 2
     };
   };
 
   const faultsStyle = (): PathOptions => ({
     color: "blue",
-    weight: 2,
+    weight: 2
   });
 
   return (
@@ -255,33 +308,67 @@ function LeafletMap({ layers }: LeafletMapProps) {
         <GeoJSON data={faultsGeo as any} style={faultsStyle} />
       )}
 
-      {/* Point layers */}
+      {/* Fire stations from GeoJSON */}
+      {layers.fireStations && fireStationsGeo && (
+        <GeoJSON
+          data={fireStationsGeo as any}
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          pointToLayer={(_feature: any, latlng) =>
+            L.marker(latlng, { icon: fireStationIcon })
+          }
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          onEachFeature={(feature: any, layer) => {
+            const name = feature?.properties?.name as string | undefined;
+            const island = feature?.properties?.island as string | undefined;
+            const label = `${name ?? "Fire station"}${
+              island ? ` (${island})` : ""
+            }`;
+            layer.bindPopup(label);
+          }}
+        />
+      )}
+
+      {/* Police stations from GeoJSON */}
+      {layers.policeStations && policeStationsGeo && (
+        <GeoJSON
+          data={policeStationsGeo as any}
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          pointToLayer={(_feature: any, latlng) =>
+            L.marker(latlng, { icon: policeIcon })
+          }
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          onEachFeature={(feature: any, layer) => {
+            const name = feature?.properties?.name as string | undefined;
+            const island = feature?.properties?.island as string | undefined;
+            const label = `${name ?? "Police station"}${
+              island ? ` (${island})` : ""
+            }`;
+            layer.bindPopup(label);
+          }}
+        />
+      )}
+
+      {/* Point layers from CSV */}
       {layers.emergencySirens &&
         sirens.map((s, i) => (
-          <CircleMarker
+          <Marker
             key={`siren-${i}`}
-            center={[s.lat, s.lon]}
-            radius={4}
-            pathOptions={{ color: "#555", fillColor: "#555", fillOpacity: 0.9 }}
+            position={[s.lat, s.lon]}
+            icon={sirenIcon}
           >
             <Popup>{s.label}</Popup>
-          </CircleMarker>
+          </Marker>
         ))}
 
       {layers.hurricaneShelters &&
         shelters.map((s, i) => (
-          <CircleMarker
+          <Marker
             key={`shelter-${i}`}
-            center={[s.lat, s.lon]}
-            radius={4}
-            pathOptions={{
-              color: "purple",
-              fillColor: "purple",
-              fillOpacity: 0.9,
-            }}
+            position={[s.lat, s.lon]}
+            icon={shelterIcon}
           >
             <Popup>{s.label}</Popup>
-          </CircleMarker>
+          </Marker>
         ))}
     </MapContainer>
   );
