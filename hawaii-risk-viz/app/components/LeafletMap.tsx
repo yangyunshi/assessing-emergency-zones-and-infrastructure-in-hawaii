@@ -512,7 +512,7 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
                 const isSelected = selectedLavaZone === hzone;
                 pathLayer.setStyle({
                   weight: isSelected ? 3 : 0.5,
-                  fillOpacity: isSelected || isHoveredLavaZone === hzone ? 0.8 : 0.5,
+                  fillOpacity: isSelected || hoverLavaZone === hzone ? 0.8 : 0.5,
                 });
                 pathLayer.closeTooltip();
               },
