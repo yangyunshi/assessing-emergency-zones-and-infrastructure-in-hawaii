@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import AddLocation from "./AddLocation";
+import SourcesModal, { type SourceLink } from "./SourcesModal";
 import * as d3 from "d3";
 
 export type LayerVisibility = {
@@ -55,6 +56,67 @@ const LAYER_DATASETS: Record<keyof LayerVisibility, string[]> = {
   tsunamiZones: ["Tsunami-Evacuation-All-Zones.geojson"],
   rainfallContours: ["Annual_Rainfall_(mm).geojson"],
   faultLines: ["Faults.geojson"]
+};
+
+type SourceKey = "infrastructure" | "fire" | "tsunami";
+
+const SECTION_SOURCES: Record<
+  SourcesKey,
+  { title: string; sources: SourceLink[] }
+> = {
+  infrastructure: {
+    title: "General Safety Infrastructure - data sources",
+    sources: [
+      {
+        label: "Emergency Siren Locations (Hawaii Open Data resource)",
+        url: "https://opendata.hawaii.gov/dataset/department-of-defense-state-civil-defense-emergency-siren-locations/resource/8241acde-528f-4895-84c9-aa21dc3bdc94"
+      },
+      {
+        label: "State Civil Defense Hurricane Shelters (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/state-civil-defense-hurricane-shelters"
+      },
+      {
+        label: "Poice Stations (HI Geodata ArcGIS)",
+        url: "https://geodata.hawaii.gov/arcgis/rest/services/EmergMgmtPubSafety/MapServer/5/query?where=1=1&outFields=*&outSR=4326&f=geojson"
+      }
+    ]
+  },
+
+  fire: {
+    title: "Fire Disasters - data sources",
+    sources: [
+      {
+        label: "Fire Risk Areas (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/fire-risk-areas"
+      },
+      {
+        label: "Volcano Lava Flow Hazard Zones (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/volcano-lava-flow-hazard-zones"
+      },
+      {
+        label: "Fire Stations (HI GeoData ArcGIS)",
+        url: "https://geodata.hawaii.gov/arcgis/rest/services/EmergMgmtPubSafety/MapServer/4/query?where=1=1&outFields=*&outSR=4326&f=geojson"
+      },
+    ]
+  },
+
+  tsunami: {
+    title: "Tsunami & Flooding Disasters - data sources",
+    sources: [
+      {
+        label: "Tsunami Evacuation All Zones (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/tsunami-evacuation-all-zones"
+      },
+      {
+        label: "Annual Rainfall (mm) (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/annual-rainfall-mm"
+      },
+      {
+        label: "Tsunami Safe Zones (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/tsunami-safe-zones"
+      }
+    ]
+  }
 };
 
 // Haversine distance in meters between two lat/lon points
@@ -158,6 +220,7 @@ function CheckboxPanel({
   onRemoveUserLocation
 }: CheckboxPanelProps) {
   const [openWindow, setOpenWindow] = useState(false);
+  const [openSoures, setOpenSources] = useState<SourcesKey | null>(null);
 
   // Points for quick distance checks
   const [sirenPoints, setSirenPoints] = useState<SimplePoint[]>([]);
@@ -301,6 +364,25 @@ function CheckboxPanel({
           >
             General Safety Infrastructure
           </span>
+
+          <button
+            type="button"
+            onClick={() => setOpenSources("infrastructure")}
+            title="View data sources"
+            aria-label="View data sources for General Safety Infrastructure"
+            style={{
+              width: 22,
+              height: 22,
+              borderRadius: "999px",
+              border: "1px solid #777",
+              backgroundColor: "#f5f5f5",
+              cursor: "pointer",
+              fontWeight: 700,
+              lineHeight: "20px"
+            }}
+          >
+            ?
+          </button>
         </header>
 
         <div
@@ -364,6 +446,25 @@ function CheckboxPanel({
           >
             Fire Disasters
           </span>
+
+          <button
+            type="button"
+            onClick={() => setOpenSources("fire")}
+            title="View data sources"
+            aria-label="View data sources for Fire Disasters"
+            style={{
+              width: 22,
+              height: 22,
+              borderRadius: "999px",
+              border: "1px solid #777",
+              backgroundColor: "#f5f5f5",
+              cursor: "pointer",
+              fontWeight: 700,
+              lineHeight: "20px"
+            }}
+          >
+            ?
+          </button>
         </header>
 
         <div
@@ -427,6 +528,25 @@ function CheckboxPanel({
           >
             Tsunami and Flooding Disasters
           </span>
+
+          <button
+            type="button"
+            onClick={() => setOpenSources("tsunami")}
+            title="View data sources"
+            aria-label="View data sources for Tsunami and Flooding Disasters"
+            style={{
+              width: 22,
+              height: 22,
+              borderRadius: "999px",
+              border: "1px solid #777",
+              backgroundColor: "#f5f5f5",
+              cursor: "pointer",
+              fontWeight: 700,
+              lineHeight: "20px"
+            }}
+          >
+            ?
+          </button>
         </header>
 
         <div
@@ -631,6 +751,13 @@ function CheckboxPanel({
         </button>
       </div>
 
+      <SourcesModal
+        open={openSources !== null}
+        title={openSources ? SECTION_SOURCES[openSources].title : ""}
+        sources={openSources ? SECTION_SOURCES[openSources].sources : []}
+        onClose={() => setOpenSources(null)}
+      />
+      
       <AddLocation
         open={openWindow}
         onClose={() => setOpenWindow(false)}
