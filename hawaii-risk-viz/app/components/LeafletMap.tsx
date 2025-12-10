@@ -168,6 +168,12 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
   );
   const [policeStationsGeo, setPoliceStationsGeo] =
     useState<FeatureCollection | null>(null);
+  const [selectedFireRisk, setSelectedFireRisk] = useState<string | null>(null);
+  const [hoverFireRisk, setHoverFireRisk] = useState<string | null>(null);
+  const [selectedTsunamiType, setSelectedTsunamiType] = useState<string | null>(null);
+  const [hoverTsunamiType, setHoverTsunamiType] = useState<string | null>(null);
+  const [selectedLavaZone, setSelectedLavaZone] = useState<number | null>(null);
+  const [hoverLavaZone, setHoverLavaZone] = useState<number | null>(null);
 
 
   const fireStationPoints = useMemo<SimplePoint[]>(() => {
@@ -332,69 +338,89 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const fireRiskStyle = (feature: any): PathOptions => {
     const rating = feature?.properties?.risk_rating as string | undefined;
+
     let fillColor = "#ffb6c1"; // Low
     if (rating === "Medium") fillColor = "#ff6347";
     if (rating === "High") fillColor = "#8b0000";
 
+    const isSelected = selectedFireRisk && selectedFireRisk === rating;
+    const isHovered = hoverFireRisk && hoverFireRisk === rating;
+
     return {
       color: fillColor,
-      weight: 0.5,
       fillColor,
-      fillOpacity: 0.5
+      weight: isSelected ? 3 : 0.5,
+      fillOpacity: isSelected || isHovered ? 0.8 : 0.4,
+      opacity: isSelected || isHovered ? 1 : 0.5,
     };
   };
+
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const tsunamiStyle = (feature: any): PathOptions => {
     const zone = feature?.properties?.zone_type as string | undefined;
-    let fillColor = "#add8e6";
+
+    let fillColor = "#add8e6"; // Default
     if (zone === "Tsunami Evacuation Zone") fillColor = "#6495ed";
     if (zone === "Extreme Tsunami Evacuation Zone") fillColor = "#00008b";
+
+    const isSelected = selectedTsunamiType && selectedTsunamiType === zone;
+    const isHovered = hoverTsunamiType && hoverTsunamiType === zone;
+
     return {
       color: fillColor,
-      weight: 0.5,
       fillColor,
-      fillOpacity: 0.5
+      weight: isSelected ? 3 : 0.7,
+      fillOpacity: isSelected || isHovered ? 0.8 : 0.4,
+      opacity: isSelected || isHovered ? 1 : 0.6,
     };
   };
+
+// Sequential scale for lava hazard (1 = high risk, 9 = low risk)
+  const lavaColorScale = d3.scaleSequential()
+    .domain([9, 1])            // invert domain: 1 = darkest, 9 = lightest
+    .interpolator(d3.interpolateReds);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const lavaStyle = (feature: any): PathOptions => {
-    const zone = Number(feature?.properties?.hzone ?? Number.NaN);
-    let fillColor = "#fee5d9";
-    if (!Number.isNaN(zone)) {
-      if (zone <= 2) fillColor = "#a50f15";
-      else if (zone <= 4) fillColor = "#fb6a4a";
-      else fillColor = "#fcae91";
-    }
+    const zone = Number(feature?.properties?.hzone ?? NaN);
+    if (Number.isNaN(zone)) return { color: "#fcae91", weight: 0.5, fillOpacity: 0.5 };
+
+    const fillColor = lavaColorScale(zone);
+
+    const isSelected = selectedLavaZone === zone;
+    const isHovered = hoverLavaZone === zone;
+
     return {
       color: fillColor,
-      weight: 0.5,
       fillColor,
-      fillOpacity: 0.5
+      weight: isSelected ? (isHovered ? 4 : 3) : (isHovered ? 3 : 0.5),
+      fillOpacity: isSelected || isHovered ? 0.8 : 0.5,
+      opacity: isSelected || isHovered ? 1 : 0.5,
     };
   };
 
+
+
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const rainfallStyle = (feature: any): PathOptions => {
-    const contour = Number(feature?.properties?.contour ?? Number.NaN);
+  const rainfallStyle = (feature: any): PathOptions => { const contour = Number(feature?.properties?.contour ?? Number.NaN);
     let color = "#c6dbef";
-    if (!Number.isNaN(contour)) {
-      if (contour <= 1000) color = "#c6dbef";
+    if (!Number.isNaN(contour))
+    { if (contour <= 1000) color = "#c6dbef";
       else if (contour <= 2000) color = "#6baed6";
       else if (contour <= 3000) color = "#4292c6";
       else if (contour <= 4000) color = "#2171b5";
-      else color = "#08306b";
-    }
-    return {
-      color,
-      weight: 2
-    };
-  };
+      else color = "#08306b"; }
+    return { color, weight: 2 }; };
+
+
+
+
 
   const faultsStyle = (): PathOptions => ({
-    color: "blue",
-    weight: 2
+    color: "green",
+    weight: 4
   });
 
   return (
@@ -412,20 +438,115 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
 
       {/* Polygon / line layers */}
       {layers.fireRiskZones && fireRiskGeo && (
-        <GeoJSON data={fireRiskGeo as any} style={fireRiskStyle} />
+        <GeoJSON
+          data={fireRiskGeo as any}
+          style={fireRiskStyle}
+          onEachFeature={(feature: any, layer) => {
+            const rating = feature?.properties?.risk_rating;
+
+            layer.on({
+              click: () => {
+                // Clicking same category again clears selection
+                setSelectedFireRisk(prev => prev === rating ? null : rating);
+              },
+              mouseover: () => {
+                setHoverFireRisk(rating);
+                layer.setStyle({ weight: 3, fillOpacity: 0.8 });
+              },
+              mouseout: () => {
+                setHoverFireRisk(null);
+                layer.setStyle({ weight: 0.5, fillOpacity: 0.4 });
+              }
+            });
+
+            layer.bindTooltip(`Fire Risk: ${rating}`, {
+              sticky: true,
+            });
+          }}
+        />
       )}
+
 
       {layers.tsunamiZones && tsunamiGeo && (
-        <GeoJSON data={tsunamiGeo as any} style={tsunamiStyle} />
+        <GeoJSON
+          data={tsunamiGeo as any}
+          style={tsunamiStyle}
+          onEachFeature={(feature: any, layer) => {
+            const zone = feature?.properties?.zone_type;
+
+            layer.on({
+              click: () => {
+                setSelectedTsunamiType(prev => prev === zone ? null : zone);
+              },
+              mouseover: () => {
+                setHoverTsunamiType(zone);
+                layer.setStyle({ weight: 3, fillOpacity: 0.8 });
+              },
+              mouseout: () => {
+                setHoverTsunamiType(null);
+                layer.setStyle({ weight: 0.7, fillOpacity: 0.4 });
+              }
+            });
+
+            layer.bindTooltip(`Tsunami Zone: ${zone}`, {
+              sticky: true,
+            });
+          }}
+        />
       )}
+
 
       {layers.lavaZones && lavaGeo && (
-        <GeoJSON data={lavaGeo as any} style={lavaStyle} />
+        <GeoJSON
+          data={lavaGeo as any}
+          style={lavaStyle}
+          onEachFeature={(feature: any, layer) => {
+            const zone = Number(feature?.properties?.hzone);
+
+            layer.on({
+              click: () => {
+                setSelectedLavaZone((prev) => (prev === zone ? null : zone));
+              },
+              mouseover: () => {
+                setHoverLavaZone(zone);
+                layer.setStyle(lavaStyle(feature));
+              },
+              mouseout: () => {
+                setHoverLavaZone(null);
+                layer.setStyle(lavaStyle(feature));
+              },
+            });
+
+            layer.bindTooltip(`Lava Zone: ${zone}`, { sticky: true });
+          }}
+        />
       )}
 
+
       {layers.rainfallContours && rainfallGeo && (
-        <GeoJSON data={rainfallGeo as any} style={rainfallStyle} />
+        <GeoJSON
+          data={rainfallGeo as any}
+          style={rainfallStyle}
+          onEachFeature={(feature: any, layer) => {
+            const contour = feature?.properties?.contour;
+
+            layer.bindTooltip(`Rainfall: ${contour} mm`, {
+              sticky: true,
+              direction: "top"
+            });
+
+            layer.on({
+              mouseover: () => {
+                layer.setStyle({ weight: 4 });
+              },
+              mouseout: () => {
+                layer.setStyle({ weight: 2 });
+              }
+            });
+          }}
+        />
       )}
+
 
       {layers.faultLines && faultsGeo && (
         <GeoJSON data={faultsGeo as any} style={faultsStyle} />
