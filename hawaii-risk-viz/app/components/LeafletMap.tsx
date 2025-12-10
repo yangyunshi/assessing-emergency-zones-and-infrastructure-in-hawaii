@@ -131,9 +131,30 @@ interface FeatureCollection {
   features: GeoFeature[];
 }
 
-function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
+interface SimplePoint {
+  lat: number;
+  lon: number;
+}
 
-  console.log("userLocations on map", userLocations);
+function countPointsWithinRadius(
+  centerLat: number,
+  centerLon: number,
+  radiusMeters: number,
+  points: SimplePoint[]
+): number {
+  const center = L.latLng(centerLat, centerLon);
+  let count = 0;
+
+  for (const p of points) {
+    const d = center.distanceTo(L.latLng(p.lat, p.lon));
+    if (d <= radiusMeters) count += 1;
+  }
+
+  return count;
+}
+
+
+function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
 
   const [sirens, setSirens] = useState<SirenPoint[]>([]);
   const [shelters, setShelters] = useState<ShelterPoint[]>([]);
@@ -147,6 +168,30 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
   );
   const [policeStationsGeo, setPoliceStationsGeo] =
     useState<FeatureCollection | null>(null);
+
+
+  const fireStationPoints = useMemo<SimplePoint[]>(() => {
+    if (!fireStationsGeo) return [];
+    return fireStationsGeo.features
+      .map((f) => {
+        if (!f.geometry || f.geometry.type !== "Point") return null;
+        const coords = f.geometry.coordinates as [number, number]; // [lon, lat]
+        return { lat: coords[1], lon: coords[0] };
+      })
+      .filter((p): p is SimplePoint => p !== null);
+  }, [fireStationsGeo]);
+
+  const policeStationPoints = useMemo<SimplePoint[]>(() => {
+    if (!policeStationsGeo) return [];
+    return policeStationsGeo.features
+      .map((f) => {
+        if (!f.geometry || f.geometry.type !== "Point") return null;
+        const coords = f.geometry.coordinates as [number, number]; // [lon, lat]
+        return { lat: coords[1], lon: coords[0] };
+      })
+      .filter((p): p is SimplePoint => p !== null);
+  }, [policeStationsGeo]);
+
 
   const [zoom, setZoom] = useState(6);
 
@@ -398,9 +443,8 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
           onEachFeature={(feature: any, layer) => {
             const name = feature?.properties?.name as string | undefined;
             const island = feature?.properties?.island as string | undefined;
-            const label = `${name ?? "Fire station"}${
-              island ? ` (${island})` : ""
-            }`;
+            const label = `${name ?? "Fire station"}${island ? ` (${island})` : ""
+              }`;
             layer.bindPopup(label);
           }}
         />
@@ -418,9 +462,8 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
           onEachFeature={(feature: any, layer) => {
             const name = feature?.properties?.name as string | undefined;
             const island = feature?.properties?.island as string | undefined;
-            const label = `${name ?? "Police station"}${
-              island ? ` (${island})` : ""
-            }`;
+            const label = `${name ?? "Police station"}${island ? ` (${island})` : ""
+              }`;
             layer.bindPopup(label);
           }}
         />
@@ -450,32 +493,65 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
         ))}
 
       {/* Custom user locations: marker + radius circle */}
-      {/* Custom user locations: marker + radius circle */}
-      {userLocations.map((loc) => (
-        <React.Fragment key={loc.id}>
-          <Marker
-            position={[loc.lat, loc.lon]}
-            icon={userLocationIcon}
-          >
-            <Popup>
-              Custom location
-              <br />
-              Radius: {loc.radiusMiles} mi
-            </Popup>
-          </Marker>
+      {userLocations.map((loc) => {
+        const radiusMeters = loc.radiusMiles * 1609.34;
 
-          <Circle
-            center={[loc.lat, loc.lon]}
-            radius={loc.radiusMiles * 1609.34} // miles -> meters
-            pathOptions={{
-              color: "#0f766e",
-              fillColor: "#0f766e",
-              fillOpacity: 0.3,   // make it more obvious
-              weight: 2
-            }}
-          />
-        </React.Fragment>
-      ))}
+        const nearbyFire = countPointsWithinRadius(
+          loc.lat,
+          loc.lon,
+          radiusMeters,
+          fireStationPoints
+        );
+        const nearbyPolice = countPointsWithinRadius(
+          loc.lat,
+          loc.lon,
+          radiusMeters,
+          policeStationPoints
+        );
+        const nearbySirens = countPointsWithinRadius(
+          loc.lat,
+          loc.lon,
+          radiusMeters,
+          sirens
+        );
+        const nearbyShelters = countPointsWithinRadius(
+          loc.lat,
+          loc.lon,
+          radiusMeters,
+          shelters
+        );
+
+        return (
+          <React.Fragment key={loc.id}>
+            <Marker position={[loc.lat, loc.lon]} icon={userLocationIcon}>
+              <Popup>
+                <div>
+                  <div>
+                    <strong>Custom location</strong>
+                  </div>
+                  <div>Radius: {loc.radiusMiles} mi</div>
+                  <div style={{ marginTop: 4 }}>
+                    {nearbyFire} fire stations, {nearbyPolice} police stations
+                    <br />
+                    {nearbyShelters} shelters, {nearbySirens} sirens
+                  </div>
+                </div>
+              </Popup>
+            </Marker>
+
+            <Circle
+              center={[loc.lat, loc.lon]}
+              radius={radiusMeters}
+              pathOptions={{
+                color: "#0f766e",
+                fillColor: "#0f766e",
+                fillOpacity: 0.3,
+                weight: 2
+              }}
+            />
+          </React.Fragment>
+        );
+      })}
 
     </MapContainer>
   );
