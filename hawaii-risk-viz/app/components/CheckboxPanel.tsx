@@ -22,20 +22,17 @@ interface CheckboxPanelProps {
 }
 
 const LAYER_DATASETS: Record<keyof LayerVisibility, string[]> = {
-  policeStations: [
-    // "Police_Stations_(Statewide).csv"
-  ],
+  policeStations: ["hawaii_police_stations.geojson"],
   emergencySirens: ["Emergency-Sirens.csv"],
   hurricaneShelters: ["state-civil-defense-hurricane-shelters-csv.csv"],
-  fireStations: [
-    // "Fire_Stations_(Statewide).csv"
-  ],
+  fireStations: ["hawaii_fire_stations.geojson"],
   fireRiskZones: ["Fire-Risk-Areas.geojson"],
   lavaZones: ["Volcano_Lava_Flow_Hazard_Zones.geojson"],
   tsunamiZones: ["Tsunami-Evacuation-All-Zones.geojson"],
   rainfallContours: ["Annual_Rainfall_(mm).geojson"],
-  faultLines: ["Faults.geojson"]
+  faultLines: ["Faults.geojson"],
 };
+
 
 async function downloadSelectedDatasets(layers: LayerVisibility) {
   // Lazy-load so it only runs in the browser

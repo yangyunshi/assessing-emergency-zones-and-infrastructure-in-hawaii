@@ -30,6 +30,18 @@ interface ShelterPoint {
   label: string;
 }
 
+interface FireStationPoint {
+  lat: number;
+  lon: number;
+  label: string;
+}
+
+interface PoliceStationPoint {
+  lat: number;
+  lon: number;
+  label: string;
+}
+
 // Very light GeoJSON typing
 interface GeoFeature {
   type: "Feature";
@@ -50,6 +62,8 @@ interface FeatureCollection {
 function LeafletMap({ layers }: LeafletMapProps) {
   const [sirens, setSirens] = useState<SirenPoint[]>([]);
   const [shelters, setShelters] = useState<ShelterPoint[]>([]);
+  const [fireStations, setFireStations] = useState<FireStationPoint[]>([]);
+  const [policeStations, setPoliceStations] = useState<PoliceStationPoint[]>([]);
   const [fireRiskGeo, setFireRiskGeo] = useState<FeatureCollection | null>(null);
   const [tsunamiGeo, setTsunamiGeo] = useState<FeatureCollection | null>(null);
   const [lavaGeo, setLavaGeo] = useState<FeatureCollection | null>(null);
@@ -68,6 +82,14 @@ function LeafletMap({ layers }: LeafletMapProps) {
         const shelterRows: d3.DSVRowArray<string> = await d3.csv(
           "/datasets/state-civil-defense-hurricane-shelters-csv.csv"
         );
+
+        // NEW: Fire & Police stations as GeoJSON point FeatureCollections
+        const fireStationsJson = (await d3.json(
+          "/datasets/hawaii_fire_stations.geojson"
+        )) as FeatureCollection;
+        const policeStationsJson = (await d3.json(
+          "/datasets/hawaii_police_stations.geojson"
+        )) as FeatureCollection;
 
         const fireRiskJson = (await d3.json(
           "/datasets/Fire-Risk-Areas.geojson"
@@ -90,9 +112,9 @@ function LeafletMap({ layers }: LeafletMapProps) {
         // ----- Emergency Sirens -----
         const parsedSirens: SirenPoint[] = sirenRows
           .map((row) => {
-            const loc1 = row["Location 1"] ?? "";
-            const location = row.LOCATION ?? "";
-            const decibelStr = row.DECIBEL ?? "";
+            const loc1 = (row["Location 1"] as string | undefined) ?? "";
+            const location = (row.LOCATION as string | undefined) ?? "";
+            const decibelStr = (row.DECIBEL as string | undefined) ?? "";
 
             const match = loc1.match(/\(([^,]+),\s*([^)]+)\)/);
             if (!match) return null;
@@ -117,15 +139,16 @@ function LeafletMap({ layers }: LeafletMapProps) {
         // ----- Hurricane Shelters -----
         const parsedShelters: ShelterPoint[] = shelterRows
           .map((row) => {
-            const loc = row.Location ?? "";
+            const loc = (row.Location as string | undefined) ?? "";
             const match = loc.match(/\(([-0-9.]+),\s*([-0-9.]+)\)/);
-            const lat = match ? Number(match[1]) : NaN;
-            const lon = match ? Number(match[2]) : NaN;
+            const lat = match ? Number(match[1]) : Number.NaN;
+            const lon = match ? Number(match[2]) : Number.NaN;
 
             if (Number.isNaN(lat) || Number.isNaN(lon)) return null;
 
-            const shelterName = row["Hurricane Shelter"] ?? "Shelter";
-            const island = row.Island ?? "";
+            const shelterName =
+              (row["Hurricane Shelter"] as string | undefined) ?? "Shelter";
+            const island = (row.Island as string | undefined) ?? "";
             return {
               lat,
               lon,
@@ -136,6 +159,69 @@ function LeafletMap({ layers }: LeafletMapProps) {
 
         setShelters(parsedShelters);
 
+        // ----- Fire Stations (GeoJSON points) -----
+        const parsedFireStations: FireStationPoint[] =
+          fireStationsJson.features
+            .map((f) => {
+              const coords = f.geometry.coordinates as [number, number];
+              const [lon, lat] = coords;
+              if (
+                typeof lat !== "number" ||
+                typeof lon !== "number" ||
+                Number.isNaN(lat) ||
+                Number.isNaN(lon)
+              ) {
+                return null;
+              }
+
+              const name = String(
+                (f.properties["name"] as string | undefined) ??
+                "Fire Station"
+              );
+              const island = String(
+                (f.properties["island"] as string | undefined) ?? ""
+              );
+              const label = island ? `${name} (${island})` : name;
+              return { lat, lon, label };
+            })
+            .filter(
+              (station): station is FireStationPoint => station !== null
+            );
+
+        setFireStations(parsedFireStations);
+
+        // ----- Police Stations (GeoJSON points) -----
+        const parsedPoliceStations: PoliceStationPoint[] =
+          policeStationsJson.features
+            .map((f) => {
+              const coords = f.geometry.coordinates as [number, number];
+              const [lon, lat] = coords;
+              if (
+                typeof lat !== "number" ||
+                typeof lon !== "number" ||
+                Number.isNaN(lat) ||
+                Number.isNaN(lon)
+              ) {
+                return null;
+              }
+
+              const name = String(
+                (f.properties["name"] as string | undefined) ??
+                "Police Station"
+              );
+              const island = String(
+                (f.properties["island"] as string | undefined) ?? ""
+              );
+              const label = island ? `${name} (${island})` : name;
+              return { lat, lon, label };
+            })
+            .filter(
+              (station): station is PoliceStationPoint => station !== null
+            );
+
+        setPoliceStations(parsedPoliceStations);
+
+        // ----- GeoJSON polygon/line layers -----
         setFireRiskGeo(fireRiskJson);
         setTsunamiGeo(tsunamiJson);
         setLavaGeo(lavaJson);
@@ -277,6 +363,38 @@ function LeafletMap({ layers }: LeafletMapProps) {
             pathOptions={{
               color: "purple",
               fillColor: "purple",
+              fillOpacity: 0.9,
+            }}
+          >
+            <Popup>{s.label}</Popup>
+          </CircleMarker>
+        ))}
+
+      {layers.fireStations &&
+        fireStations.map((s, i) => (
+          <CircleMarker
+            key={`fire-${i}`}
+            center={[s.lat, s.lon]}
+            radius={4}
+            pathOptions={{
+              color: "red",
+              fillColor: "red",
+              fillOpacity: 0.9,
+            }}
+          >
+            <Popup>{s.label}</Popup>
+          </CircleMarker>
+        ))}
+
+      {layers.policeStations &&
+        policeStations.map((s, i) => (
+          <CircleMarker
+            key={`police-${i}`}
+            center={[s.lat, s.lon]}
+            radius={4}
+            pathOptions={{
+              color: "navy",
+              fillColor: "navy",
               fillOpacity: 0.9,
             }}
           >
