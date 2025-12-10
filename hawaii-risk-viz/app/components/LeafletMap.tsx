@@ -343,13 +343,13 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
     if (rating === "Medium") fillColor = "#ff6347";
     if (rating === "High") fillColor = "#8b0000";
 
-    const isSelected = selectedFireRisk && selectedFireRisk === rating;
-    const isHovered = hoverFireRisk && hoverFireRisk === rating;
+    const isSelected = selectedFireRisk === rating;
+    const isHovered = hoverFireRisk === rating;
 
     return {
       color: fillColor,
       fillColor,
-      weight: isSelected ? 3 : 0.5,
+      weight: isSelected ? 2 : 0.5,
       fillOpacity: isSelected || isHovered ? 0.8 : 0.4,
       opacity: isSelected || isHovered ? 1 : 0.5,
     };
@@ -437,60 +437,56 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
       />
 
       {/* Polygon / line layers */}
+
       {layers.fireRiskZones && fireRiskGeo && (
         <GeoJSON
           data={fireRiskGeo as any}
-          style={fireRiskStyle}
-          onEachFeature={(feature: any, layer) => {
+          style={fireRiskStyle} // style function uses selectedHover + hoverHover state
+          onEachFeature={(feature: any, layer: L.Layer) => {
+            const pathLayer = layer as L.Path;
             const rating = feature?.properties?.risk_rating;
 
-            layer.on({
-              click: () => {
-                // Clicking same category again clears selection
-                setSelectedFireRisk(prev => prev === rating ? null : rating);
-              },
-              mouseover: () => {
-                setHoverFireRisk(rating);
-                layer.setStyle({ weight: 3, fillOpacity: 0.8 });
-              },
-              mouseout: () => {
-                setHoverFireRisk(null);
-                layer.setStyle({ weight: 0.5, fillOpacity: 0.4 });
-              }
-            });
+            // Tooltip (sticky: false avoids jitter)
+            pathLayer.bindTooltip(`Fire Risk: ${rating}`, { sticky: false });
 
-            layer.bindTooltip(`Fire Risk: ${rating}`, {
-              sticky: true,
+            pathLayer.on({
+              click: () => setSelectedFireRisk(prev => (prev === rating ? null : rating)),
+              mouseover: () => setHoverFireRisk(rating),
+              mouseout: () => setHoverFireRisk(null),
             });
           }}
         />
       )}
 
 
+
+
+
       {layers.tsunamiZones && tsunamiGeo && (
         <GeoJSON
           data={tsunamiGeo as any}
           style={tsunamiStyle}
-          onEachFeature={(feature: any, layer) => {
+          onEachFeature={(feature: any, layer: L.Layer) => {
+            const pathLayer = layer as L.Path;
             const zone = feature?.properties?.zone_type;
 
-            layer.on({
-              click: () => {
-                setSelectedTsunamiType(prev => prev === zone ? null : zone);
-              },
+            pathLayer.on({
+              click: () => setSelectedTsunamiType(prev => (prev === zone ? null : zone)),
               mouseover: () => {
                 setHoverTsunamiType(zone);
-                layer.setStyle({ weight: 3, fillOpacity: 0.8 });
+                pathLayer.setStyle({ weight: 3, fillOpacity: 0.8 });
               },
               mouseout: () => {
                 setHoverTsunamiType(null);
-                layer.setStyle({ weight: 0.7, fillOpacity: 0.4 });
-              }
+                const isSelected = selectedTsunamiType === zone;
+                pathLayer.setStyle({
+                  weight: isSelected ? 3 : 0.7,
+                  fillOpacity: isSelected || hoverTsunamiType === zone ? 0.8 : 0.4,
+                });
+              },
             });
 
-            layer.bindTooltip(`Tsunami Zone: ${zone}`, {
-              sticky: true,
-            });
+            pathLayer.bindTooltip(`Tsunami Zone: ${zone}`, { sticky: true });
           }}
         />
       )}
@@ -500,24 +496,27 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
         <GeoJSON
           data={lavaGeo as any}
           style={lavaStyle}
-          onEachFeature={(feature: any, layer) => {
-            const zone = Number(feature?.properties?.hzone);
+          onEachFeature={(feature: any, layer: L.Layer) => {
+            const pathLayer = layer as L.Path;
+            const hzone = Number(feature?.properties?.hzone ?? NaN);
 
-            layer.on({
-              click: () => {
-                setSelectedLavaZone((prev) => (prev === zone ? null : zone));
-              },
+            pathLayer.on({
+              click: () => setSelectedLavaZone(prev => (prev === hzone ? null : hzone)),
               mouseover: () => {
-                setHoverLavaZone(zone);
-                layer.setStyle(lavaStyle(feature));
+                setHoverLavaZone(hzone);
+                pathLayer.setStyle({ weight: 3, fillOpacity: 0.8 });
+                pathLayer.bindTooltip(`Lava Zone Rank: ${hzone}`, { sticky: true }).openTooltip();
               },
               mouseout: () => {
                 setHoverLavaZone(null);
-                layer.setStyle(lavaStyle(feature));
+                const isSelected = selectedLavaZone === hzone;
+                pathLayer.setStyle({
+                  weight: isSelected ? 3 : 0.5,
+                  fillOpacity: isSelected || isHoveredLavaZone === hzone ? 0.8 : 0.5,
+                });
+                pathLayer.closeTooltip();
               },
             });
-
-            layer.bindTooltip(`Lava Zone: ${zone}`, { sticky: true });
           }}
         />
       )}
@@ -528,7 +527,7 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
           data={rainfallGeo as any}
           style={rainfallStyle}
           onEachFeature={(feature: any, layer) => {
-            const contour = feature?.properties?.contour;
+            const contour = Number(feature?.properties?.contour ?? Number.NaN);
 
             layer.bindTooltip(`Rainfall: ${contour} mm`, {
               sticky: true,
@@ -537,15 +536,19 @@ function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
 
             layer.on({
               mouseover: () => {
-                layer.setStyle({ weight: 4 });
+                setHoverRainContour(contour);
+                (layer as L.Path).setStyle({ weight: 5 }); // <- cast to Path
               },
               mouseout: () => {
-                layer.setStyle({ weight: 2 });
-              }
+                setHoverRainContour(null);
+                (layer as L.Path).setStyle({ weight: 2 });
+              },
             });
+
           }}
         />
       )}
+
 
 
       {layers.faultLines && faultsGeo && (
