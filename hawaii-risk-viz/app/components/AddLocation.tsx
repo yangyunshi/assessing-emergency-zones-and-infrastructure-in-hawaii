@@ -4,11 +4,28 @@ import { useState } from "react";
 type Props = {
   open: boolean;
   onClose: () => void;
+  onSave: (loc: { lat: number; lon: number; radiusMiles: number }) => void;
 };
 
-function AddLocation({ open, onClose }: Props) {
+function AddLocation({ open, onClose, onSave }: Props) {
+  const [latInput, setLatInput] = useState<string>("");
+  const [lonInput, setLonInput] = useState<string>("");
   const [selectedDistance, setSelectedDistance] = useState<number | null>(null);
+
   if (!open) return null; // do not render when closed
+
+  function handleSave() {
+    const lat = Number(latInput);
+    const lon = Number(lonInput);
+    const radiusMiles = selectedDistance ?? 5; // default to 5 mi if none picked
+
+    if (Number.isNaN(lat) || Number.isNaN(lon)) {
+      window.alert("Please enter a valid latitude and longitude.");
+      return;
+    }
+
+    onSave({ lat, lon, radiusMiles });
+  }
 
   return (
     <div
@@ -38,19 +55,25 @@ function AddLocation({ open, onClose }: Props) {
         }}
         onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
-        <h3 style={{
-          marginTop: 0,
-          marginBottom: "16px",
-          fontSize: "1.1rem",
-          fontWeight: 600
-        }}>Add a Location</h3>
+        <h3
+          style={{
+            marginTop: 0,
+            marginBottom: "16px",
+            fontSize: "1.1rem",
+            fontWeight: 600
+          }}
+        >
+          Add a Location
+        </h3>
 
-        <label style={{display: "block", marginBottom: "14px"}}>
+        <label style={{ display: "block", marginBottom: "14px" }}>
           Latitude:
           <input
             type="number"
             step="0.000001"
             placeholder="e.g., 21.3069"
+            value={latInput}
+            onChange={(e) => setLatInput(e.target.value)}
             style={{
               width: "100%",
               marginTop: "4px",
@@ -62,12 +85,14 @@ function AddLocation({ open, onClose }: Props) {
           />
         </label>
 
-        <label style={{display: "block", marginBottom: "18px"}}>
+        <label style={{ display: "block", marginBottom: "18px" }}>
           Longitude:
           <input
             type="number"
             step="0.000001"
             placeholder="e.g., -157.8583"
+            value={lonInput}
+            onChange={(e) => setLonInput(e.target.value)}
             style={{
               width: "100%",
               marginTop: "4px",
@@ -79,7 +104,7 @@ function AddLocation({ open, onClose }: Props) {
           />
         </label>
 
-        <div style={{marginBottom: "18px"}}>
+        <div style={{ marginBottom: "18px" }}>
           <div
             style={{
               marginBottom: "8px",
@@ -99,16 +124,17 @@ function AddLocation({ open, onClose }: Props) {
             {[5, 10, 15, 20].map((miles) => (
               <button
                 key={miles}
+                type="button"
                 onClick={() => setSelectedDistance(miles)}
                 style={{
                   padding: "6px 10px",
                   borderRadius: "8px",
-                  border: selectedDistance === miles
-                    ? "2px solid #3ac2a0"
-                    : "1px solid #999",
-                  backgroundColor: selectedDistance === miles
-                    ? "#e7f9f4"
-                    : "#f5f5f5",
+                  border:
+                    selectedDistance === miles
+                      ? "2px solid #3ac2a0"
+                      : "1px solid #999",
+                  backgroundColor:
+                    selectedDistance === miles ? "#e7f9f4" : "#f5f5f5",
                   cursor: "pointer",
                   fontSize: "0.85rem",
                   fontWeight: selectedDistance === miles ? 600 : 400
@@ -120,8 +146,15 @@ function AddLocation({ open, onClose }: Props) {
           </div>
         </div>
 
-        <div style={{display: "flex", justifyContent: "flex-end", gap: "8px"}}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            gap: "8px"
+          }}
+        >
           <button
+            type="button"
             onClick={onClose}
             style={{
               padding: "6px 12px",
@@ -134,6 +167,8 @@ function AddLocation({ open, onClose }: Props) {
           </button>
 
           <button
+            type="button"
+            onClick={handleSave}
             style={{
               padding: "6px 12px",
               borderRadius: "8px",

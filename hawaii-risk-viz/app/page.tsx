@@ -2,9 +2,14 @@
 
 import { useState } from "react";
 import MapArea from "./components/MapArea";
-import CheckboxPanel, {
-  LayerVisibility
-} from "./components/CheckboxPanel";
+import CheckboxPanel, { LayerVisibility } from "./components/CheckboxPanel";
+
+type UserLocation = {
+  id: string;
+  lat: number;
+  lon: number;
+  radiusMiles: number;
+};
 
 const initialLayers: LayerVisibility = {
   policeStations: false,
@@ -20,52 +25,67 @@ const initialLayers: LayerVisibility = {
 
 export default function HomePage() {
   const [layers, setLayers] = useState<LayerVisibility>(initialLayers);
+  const [userLocations, setUserLocations] = useState<UserLocation[]>([]);
+
+  function handleAddUserLocation(loc: {
+    lat: number;
+    lon: number;
+    radiusMiles: number;
+  }) {
+    setUserLocations((prev) => [
+      ...prev,
+      {
+        id: crypto.randomUUID(),
+        ...loc
+      }
+    ]);
+  }
+
+  function handleRemoveUserLocation(id: string) {
+    setUserLocations((prev) => prev.filter((loc) => loc.id !== id));
+  }
 
   return (
     <main
       style={{
-        display: "flex",
-        height: "100vh",
-        backgroundColor: "#e5e7eb"
+        display: "grid",
+        gridTemplateColumns: "320px 1fr",
+        height: "100vh"
       }}
     >
-      <aside
+      <section
         style={{
-          width: "240px",
           padding: "12px",
           backgroundColor: "#f3f4f6",
-          boxShadow: "0 0 4px rgba(0,0,0,0.2)",
-          boxSizing: "border-box"
+          overflowY: "auto"
         }}
       >
         <h1
           style={{
-            fontSize: "0.95rem",
-            fontWeight: 600,
-            marginBottom: "8px",
-            color: "black",
+            marginTop: 0,
+            marginBottom: "12px",
+            fontSize: "1.1rem",
+            fontWeight: 700
           }}
         >
-          Assessing Natural Disaster Risk in Hawaiʻi
+          Risk in Hawaiʻi
         </h1>
-        <CheckboxPanel layers={layers} onLayersChange={setLayers} />
-      </aside>
+
+        <CheckboxPanel
+          layers={layers}
+          onLayersChange={setLayers}
+          userLocations={userLocations}
+          onAddUserLocation={handleAddUserLocation}
+          onRemoveUserLocation={handleRemoveUserLocation}
+        />
+      </section>
 
       <section
         style={{
-          flexGrow: 1,
-          padding: "0",
-          boxSizing: "border-box"
+          position: "relative"
         }}
       >
-        <div
-          style={{
-            width: "100%",
-            height: "100%"
-          }}
-        >
-          <MapArea layers={layers} />
-        </div>
+        <MapArea layers={layers} userLocations={userLocations} />
       </section>
     </main>
   );
