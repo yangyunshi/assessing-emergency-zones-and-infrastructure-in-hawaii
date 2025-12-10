@@ -1,21 +1,24 @@
-// app/components/MapArea.tsx
 "use client";
 
 import dynamic from "next/dynamic";
 import type { LayerVisibility } from "./CheckboxPanel";
 
-// Tell `dynamic` what props LeafletMap expects
-const LeafletMap = dynamic<{ layers: LayerVisibility }>(
-  () => import("./LeafletMap"),
-  {
-    ssr: false,
-  }
-);
+type UserLocation = {
+  id: string;
+  lat: number;
+  lon: number;
+  radiusMiles: number;
+};
+
+const LeafletMap = dynamic(() => import("./LeafletMap"), {
+  ssr: false
+});
 
 interface MapAreaProps {
   layers: LayerVisibility;
+  userLocations?: UserLocation[];
 }
 
-export default function MapArea({ layers }: MapAreaProps) {
-  return <LeafletMap layers={layers} />;
+export default function MapArea({ layers, userLocations = [] }: MapAreaProps) {
+  return <LeafletMap layers={layers} userLocations={userLocations} />;
 }

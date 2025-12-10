@@ -1,37 +1,44 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   MapContainer,
   TileLayer,
   Popup,
   GeoJSON,
-  Marker
+  Marker,
+  useMapEvents,
+  Circle
 } from "react-leaflet";
+
 import L, { PathOptions, DivIcon } from "leaflet";
 import * as d3 from "d3";
 import type { LayerVisibility } from "./CheckboxPanel";
 
-// --- Small helper to build SVG-based Leaflet icons ---
-function createSvgIcon(svg: string): DivIcon {
-  return L.divIcon({
-    className: "", // no default Leaflet icon styles
-    html: svg,
-    iconSize: [28, 28],
-    iconAnchor: [14, 24], // bottom-center
-    popupAnchor: [0, -24]
-  });
+
+
+type UserLocation = {
+  id: string;
+  lat: number;
+  lon: number;
+  radiusMiles: number;
+};
+
+interface LeafletMapProps {
+  layers: LayerVisibility;
+  userLocations?: UserLocation[];
 }
 
-// Single-color icons for each point layer
-const policeIcon = createSvgIcon(`
+// --- SVGs for each icon type ---
+const POLICE_SVG = `
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <rect x="4" y="14" width="16" height="3" rx="1.5" fill="#1d4ed8" />
     <polygon points="6,9 12,6 18,9 16,14 8,14" fill="#1d4ed8" />
   </svg>
-`);
+`;
 
-const sirenIcon = createSvgIcon(`
+const SIREN_SVG = `
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <!-- Speaker body -->
     <rect x="7" y="8" width="4" height="8" rx="1" fill="#6b7280" />
@@ -40,23 +47,58 @@ const sirenIcon = createSvgIcon(`
     <!-- Sound waves -->
     <path d="M16 10.5 Q17.5 12 16 13.5" fill="none" stroke="#6b7280" stroke-width="1.3" />
   </svg>
-`);
+`;
 
-
-const shelterIcon = createSvgIcon(`
+const SHELTER_SVG = `
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <polygon points="4,11 12,4 20,11 20,20 4,20" fill="#16a34a" />
   </svg>
-`);
+`;
 
-const fireStationIcon = createSvgIcon(`
+const FIRE_STATION_SVG = `
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M12 3 L15 4.5 L18 4 V11 C18 14.5 15.8 17 12 19 8.2 17 6 14.5 6 11 V4 L9 4.5 Z" fill="#ea580c" />
   </svg>
-`);
+`;
 
-interface LeafletMapProps {
-  layers: LayerVisibility;
+const USER_LOCATION_SVG = `
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <circle cx="12" cy="10" r="4" fill="#0f766e" />
+    <path d="M12 14 L9 20 L15 20 Z" fill="#0f766e" />
+  </svg>
+`;
+
+// --- Small helper to build SVG-based Leaflet icons ---
+function createSvgIcon(svg: string, size = 28): DivIcon {
+  const s = size;
+  return L.divIcon({
+    className: "",
+    html: svg,
+    iconSize: [s, s],
+    iconAnchor: [s / 2, (s * 6) / 7],
+    popupAnchor: [0, -s / 2]
+  });
+}
+
+// Icon size based on zoom
+function getIconSize(zoom: number): number {
+  if (zoom < 6) return 12;
+  if (zoom < 8) return 18;
+  if (zoom < 10) return 24;
+  return 30;
+}
+
+interface ZoomWatcherProps {
+  onZoomChange: (z: number) => void;
+}
+
+function ZoomWatcher({ onZoomChange }: ZoomWatcherProps) {
+  const map = useMapEvents({
+    zoomend: () => {
+      onZoomChange(map.getZoom());
+    }
+  });
+  return null;
 }
 
 interface SirenPoint {
@@ -89,7 +131,10 @@ interface FeatureCollection {
   features: GeoFeature[];
 }
 
-function LeafletMap({ layers }: LeafletMapProps) {
+function LeafletMap({ layers, userLocations = [] }: LeafletMapProps) {
+
+  console.log("userLocations on map", userLocations);
+
   const [sirens, setSirens] = useState<SirenPoint[]>([]);
   const [shelters, setShelters] = useState<ShelterPoint[]>([]);
   const [fireRiskGeo, setFireRiskGeo] = useState<FeatureCollection | null>(null);
@@ -97,8 +142,39 @@ function LeafletMap({ layers }: LeafletMapProps) {
   const [lavaGeo, setLavaGeo] = useState<FeatureCollection | null>(null);
   const [faultsGeo, setFaultsGeo] = useState<FeatureCollection | null>(null);
   const [rainfallGeo, setRainfallGeo] = useState<FeatureCollection | null>(null);
-  const [fireStationsGeo, setFireStationsGeo] = useState<FeatureCollection | null>(null);
-  const [policeStationsGeo, setPoliceStationsGeo] = useState<FeatureCollection | null>(null);
+  const [fireStationsGeo, setFireStationsGeo] = useState<FeatureCollection | null>(
+    null
+  );
+  const [policeStationsGeo, setPoliceStationsGeo] =
+    useState<FeatureCollection | null>(null);
+
+  const [zoom, setZoom] = useState(6);
+
+  // Zoom-dependent icons for all layers
+  const policeIcon = useMemo(
+    () => createSvgIcon(POLICE_SVG, getIconSize(zoom)),
+    [zoom]
+  );
+
+  const sirenIcon = useMemo(
+    () => createSvgIcon(SIREN_SVG, getIconSize(zoom)),
+    [zoom]
+  );
+
+  const shelterIcon = useMemo(
+    () => createSvgIcon(SHELTER_SVG, getIconSize(zoom)),
+    [zoom]
+  );
+
+  const fireStationIcon = useMemo(
+    () => createSvgIcon(FIRE_STATION_SVG, getIconSize(zoom)),
+    [zoom]
+  );
+
+  const userLocationIcon = useMemo(
+    () => createSvgIcon(USER_LOCATION_SVG, getIconSize(zoom)),
+    [zoom]
+  );
 
   // Load datasets once
   useEffect(() => {
@@ -279,9 +355,11 @@ function LeafletMap({ layers }: LeafletMapProps) {
   return (
     <MapContainer
       center={[20.5, -156.5]}
-      zoom={6}
+      zoom={zoom}
       style={{ width: "100%", height: "100%" }}
     >
+      <ZoomWatcher onZoomChange={setZoom} />
+
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -370,8 +448,39 @@ function LeafletMap({ layers }: LeafletMapProps) {
             <Popup>{s.label}</Popup>
           </Marker>
         ))}
+
+      {/* Custom user locations: marker + radius circle */}
+      {/* Custom user locations: marker + radius circle */}
+      {userLocations.map((loc) => (
+        <React.Fragment key={loc.id}>
+          <Marker
+            position={[loc.lat, loc.lon]}
+            icon={userLocationIcon}
+          >
+            <Popup>
+              Custom location
+              <br />
+              Radius: {loc.radiusMiles} mi
+            </Popup>
+          </Marker>
+
+          <Circle
+            center={[loc.lat, loc.lon]}
+            radius={loc.radiusMiles * 1609.34} // miles -> meters
+            pathOptions={{
+              color: "#0f766e",
+              fillColor: "#0f766e",
+              fillOpacity: 0.3,   // make it more obvious
+              weight: 2
+            }}
+          />
+        </React.Fragment>
+      ))}
+
     </MapContainer>
   );
 }
+
+
 
 export default LeafletMap;
