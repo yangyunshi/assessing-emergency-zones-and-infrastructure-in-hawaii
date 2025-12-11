@@ -220,7 +220,7 @@ function CheckboxPanel({
   onRemoveUserLocation
 }: CheckboxPanelProps) {
   const [openWindow, setOpenWindow] = useState(false);
-  const [openSoures, setOpenSources] = useState<SourcesKey | null>(null);
+  const [openSources, setOpenSources] = useState<SourcesKey | null>(null);
 
   // Points for quick distance checks
   const [sirenPoints, setSirenPoints] = useState<SimplePoint[]>([]);
