@@ -76,7 +76,7 @@ const SECTION_SOURCES: Record<
         url: "https://opendata.hawaii.gov/dataset/state-civil-defense-hurricane-shelters"
       },
       {
-        label: "Poice Stations (HI Geodata ArcGIS)",
+        label: "Police Stations (HI Geodata ArcGIS)",
         url: "https://geodata.hawaii.gov/arcgis/rest/services/EmergMgmtPubSafety/MapServer/5/query?where=1=1&outFields=*&outSR=4326&f=geojson"
       }
     ]
