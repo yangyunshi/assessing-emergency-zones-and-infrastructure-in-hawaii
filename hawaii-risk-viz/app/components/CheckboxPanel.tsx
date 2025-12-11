@@ -58,7 +58,7 @@ const LAYER_DATASETS: Record<keyof LayerVisibility, string[]> = {
   faultLines: ["Faults.geojson"]
 };
 
-type SourceKey = "infrastructure" | "fire" | "tsunami";
+type SourcesKey = "infrastructure" | "fire" | "tsunami";
 
 const SECTION_SOURCES: Record<
   SourcesKey,
