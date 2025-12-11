@@ -114,6 +114,10 @@ const SECTION_SOURCES: Record<
       {
         label: "Tsunami Safe Zones (Hawaii Open Data)",
         url: "https://opendata.hawaii.gov/dataset/tsunami-safe-zones"
+      },
+      {
+        label: "Earthquake Fault Lines (Hawaii Open Data)",
+        url: "https://opendata.hawaii.gov/dataset/faults"
       }
     ]
   }
